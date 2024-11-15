@@ -317,14 +317,17 @@ img.login-logo{
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 300px;
+    height: auto;
     overflow: hidden;
     text-align: center;
     transition: transform 0.2s ease-in-out;
 }
 
+
 .card-img {
-    width: auto;
-    height: 350px;
+    width: 100%;
+    height: auto;
+    border-radius : 10px;
     transition: transform 0.2s ease-in-out;
 }
 
