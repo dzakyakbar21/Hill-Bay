@@ -24,8 +24,7 @@ header nav {
     justify-content: space-between;
     align-items: center;
     padding-right: 30px;
-    padding-left: 10px;
-    
+    padding-left: 10px;   
 }
 
 .logo {
@@ -181,52 +180,171 @@ img.login-logo{
     width: 50px;
 }
 
-/* favorite */
+/* Info Product */
 
-.like-top {
-    color: #D6BC9B;
+.container-products-top {
     display: flex;
-    align-items: center;
-    margin-left: 160px;
-    margin-top: 50px;
-    margin-bottom: 40px;
-    gap: 10px;
+    background-color: #272727;
+    color: #D6BC9B; 
+    max-width: 1300px; 
+    margin: 0 auto;
 }
 
-.like-top img{
-    width: 40px;
+.column-left-top{
+    flex: 1;
+    padding: 50px;
+    max-width: 1000px;
 }
 
-/* product */
+.column-right-top{
+    flex: 1;
+    padding: 100px;
+}
 
-.container-product {
+.our-top{
+    display: block;
+}
+
+.our-top h1{
+    
+    font-weight: 600;
+    max-width: 300px;
+}
+
+.desc-top{
+    color: white;
+    font-weight: 200;
+}
+
+.desc-disc{
+    color: white;
+    text-decoration: line-through;
+}
+
+.desc-price{
+    color: white;
+    font-weight: 600;
+}
+
+.container-color .default .pertama{
+    transition: transform 0.2s ease-in-out;
+}
+
+.container-color .default .kedua{
+    transition: transform 0.2s ease-in-out;
+}
+
+.container-color .default .ketiga{
+    transition: transform 0.2s ease-in-out;
+}
+
+.container-color .hover{
+    margin-top: -45px;
+}
+
+.container-color .default .pertama:hover {
+    transform: scale(1.2);
+}
+
+/* .container-color .default .kedua:hover {
+    transform: scale(1.2);
+} */
+
+.container-color .default .ketiga:hover {
+    transform: scale(1.2);
+}
+
+.preview-butter{
+    padding-top: 30px;
+}
+
+.e-commerce{
+    display: flex;
+    padding-top: 50px;
+    padding-left: 60px;
+}
+
+.like-info{
+    padding-left: 160px;
+}
+
+.like-info img{
+    width: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.like-info img:hover{
+    transform: scale(1.1);
+}
+
+.buy-bag-btn{
+    display: flex;
+    /* justify-content: space-between; */
+    padding-top: 30px;
+    
+}
+
+.buy-bag-btn .right-btn{
+    padding-left: 20px;
+}
+
+.buy-bag-btn button{
+    width: 150px;
+    height: 40px;
+    background-color: transparent;
+    font-weight: 700;
+    color: #D6BC9B;
+    border-radius: 5px;
+    border: 1px solid #D6BC9B;
+    transition: color 0.3s ease-in-out;
+}
+
+.buy-bag-btn button:hover{
+    color: white;
+}
+
+.discover-products {
+    font-weight: 650;
+    font-size: 35px;
+    padding: 20px;
+    margin-left: 165px;  
+}
+
+.discover-products span {
+    font-size: 35px;
+    font-weight: 650;
+}
+
+.discover-products span{
+    text-decoration: none;
+    color: #D6BC9B;
+}
+
+.container-product-bottom {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .column1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex: 0;
     margin: 15px;
 }
 
 .card {
     background-color: #272727;
-    border-radius: 10px;
-    width: 290px;
-    height: 400px;
+    width: 235px;
     overflow: hidden;
     text-align: center;
     transition: transform 0.2s ease-in-out;
 }
 
-.card-body{
-    padding: 5px;
-}
-
 .card-img {
-    width: 290px;
-    height: 290px;
+    width: auto;
+    height: 200px;
     transition: transform 0.2s ease-in-out;
 }
 
@@ -234,11 +352,11 @@ img.login-logo{
     display: flex;
     font-weight: 700;
     font-size: 24px;
-    color: white;
+    color: #ffffff;
 }
 
 .card-text-discount{
-    color: white;
+    color: #ffffff;
     display: flex;
     text-decoration: line-through;
     font-size: 13px;
@@ -251,13 +369,13 @@ img.login-logo{
     margin: 15px 0;
     font-size: 16px;
     font-weight: 600;
-    color: white;
+    color: #ffffff;
 }
 
 .card-text img {
-    width: 25px; 
+    width: 20px; 
     height: auto;
-    margin-right: 10px;
+    margin-right: 8px;
 }
 
 .card img:hover {
@@ -268,6 +386,13 @@ button{
     border: none;
     background: none;
 }
+  
+
+
+
+
+
+/* Footer */
 
 .sidebar {
     padding: 15px;
@@ -298,6 +423,28 @@ footer {
     justify-content: center;
     align-items: center;
     padding-bottom: 15px;
+}
+
+
+/* Style untuk notifikasi */
+#notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    z-index: 1000;
+    display: none; /* Awalnya disembunyikan */
+}
+
+#notification.show {
+    display: block; /* Tampilkan notifikasi saat class 'show' ditambahkan */
+}
+
+.hidden {
+    display: none;
 }
 
 /* responsif */
@@ -399,23 +546,5 @@ footer {
          top: 10px;
          text-decoration: none;
     }
-
-    .like-top{
-        margin-left: 50px;
-    }
-
-    .like-top img{
-        width: 30px;
-    }
-
-    .like-top h1{
-        font-size: 25px;
-    }
-
-    .container-product{
-        display: block;
-        margin-left: 28px;
-    }
-
-    
 }
+

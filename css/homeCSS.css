@@ -14,7 +14,7 @@ html, body{
 body {
     font-family: 'Montserrat';
     font-weight: 500;
-    background-color: #161618;
+    background-color: #1f1f1f;
     color: white;
 }
 
@@ -24,25 +24,35 @@ header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding-right: 30px;
+    padding-left: 10px;
+    
 }
 
 .logo {
     font-size: 24px;
 }
 
-.searchbar {
-    display: flex;
+.search-bar {
+    position: relative;
+    width: 100%;
+    max-width: 200px;
 }
 
-.search-bar {
-    font-family: 'Montserrat';
-    width: 300px;
-    padding: 10px;
+.search-bar input[type="text"] {
+    color: white;
+    width: 100%;
+    padding: 10px 10px 10px 40px; 
+    border: 2px solid #D6BC9B;
     border-radius: 30px;
-    border: 1px solid #ccc;
     font-size: 16px;
+    background-color: #f3f4f614;
+    background-image: url('../assets/search.png'); 
+    background-position: 10px center; 
+    background-repeat: no-repeat; /* Mencegah pengulangan gambar */
+    background-size: 20px 20px; /* Atur ukuran ikon */  
 }
+
 
 .hamburger{
     display: none;
@@ -90,7 +100,7 @@ nav ul li a {
 }
 
 nav ul li a:hover{
-    color: #FFB1B1;
+    color: #D6BC9B;
 }
 
 .icons i {
@@ -214,7 +224,7 @@ img.login-logo{
 }
 
 .hero h1 span {
-    color: #FFB1B1;
+    color: #D6BC9B;
     font-size: 55px;
 }
 
@@ -237,7 +247,7 @@ img.login-logo{
 }
 
 .button:hover{
-    color: #FFB1B1;
+    color: #D6BC9B;
 }
 
 .display-tee {
@@ -263,7 +273,7 @@ img.login-logo{
 }
 
 .container-what span {
-    color: #FFB1B1;
+    color: #D6BC9B;
     font-size: 40px;
     font-weight: 600;
 }
@@ -297,7 +307,7 @@ img.login-logo{
 }
 
 .column span {
-    color: #FFB1B1;
+    color: #D6BC9B;
     font-size: 40px;
     font-weight: 600;
     cursor: pointer;
@@ -317,17 +327,14 @@ img.login-logo{
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 300px;
-    height: auto;
     overflow: hidden;
     text-align: center;
     transition: transform 0.2s ease-in-out;
 }
 
-
 .card-img {
-    width: 100%;
-    height: auto;
-    border-radius : 10px;
+    width: auto;
+    height: 350px;
     transition: transform 0.2s ease-in-out;
 }
 
@@ -352,15 +359,18 @@ img.login-logo{
 }
 
 .discover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: 350;
-    font-size: 20px;
-    margin-left: 650px;
+    font-size: 30px;
+    
 }
 
 .discover span {
     font-size: 40px;
     font-weight: 600;
-    border-bottom: 2px solid #FFB1B1; 
+    border-bottom: 2px solid #D6BC9B; 
     display: inline-block; 
     cursor: pointer;     
     transition: color 0.3s ease-in-out;
@@ -368,7 +378,7 @@ img.login-logo{
 
 .discover a{
     text-decoration: none;
-    color: #FFB1B1;
+    color: #D6BC9B;
 
 }
 
@@ -418,11 +428,14 @@ img.login-logo{
 }
 
 .sidebar a:hover {
-    color: #FFB1B1;
+    color: #D6BC9B;
 }
 
 footer {
-    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
 }
 
 

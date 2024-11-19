@@ -52,6 +52,7 @@ header nav {
     background-size: 20px 20px; /* Atur ukuran ikon */  
 }
 
+
 .hamburger{
     display: none;
 }
@@ -98,7 +99,7 @@ nav ul li a {
 }
 
 nav ul li a:hover{
-    color: #FFB1B1;
+    color: #D6BC9B;
 }
 
 .icons i {
@@ -181,93 +182,91 @@ img.login-logo{
     width: 50px;
 }
 
-/* favorite */
+/* Contact */
 
-.like-top {
-    color: #D6BC9B;
+.meet h1{
     display: flex;
+    justify-content: center;
     align-items: center;
-    margin-left: 160px;
-    margin-top: 50px;
-    margin-bottom: 40px;
-    gap: 10px;
+    padding: 20px;
+    color: #D6BC9B;
+    font-weight: 700;
 }
 
-.like-top img{
-    width: 40px;
-}
-
-/* product */
-
-.container-product {
+.container-card{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.column1 {
+.column-box{
     flex: 0;
-    margin: 15px;
+    padding: 20px;
 }
 
-.card {
+.card{
     background-color: #272727;
-    border-radius: 10px;
-    width: 290px;
-    height: 400px;
-    overflow: hidden;
+    width: 250px;
+    height: 420px;
+}
+
+.profil{
+    width: 250px;
+    height: 250px;
+}
+
+.card-text{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.card-text h1{
     text-align: center;
-    transition: transform 0.2s ease-in-out;
-}
-
-.card-body{
-    padding: 5px;
-}
-
-.card-img {
-    width: 290px;
-    height: 290px;
-    transition: transform 0.2s ease-in-out;
-}
-
-.card-title {
-    display: flex;
+    font-size: 20px;
     font-weight: 700;
-    font-size: 24px;
-    color: white;
 }
 
-.card-text-discount{
-    color: white;
+.medsos{
     display: flex;
-    text-decoration: line-through;
-    font-size: 13px;
+    justify-content: center;
 }
 
-.card-text {
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between; 
-    margin: 15px 0;
-    font-size: 16px;
-    font-weight: 600;
-    color: white;
+.medsos img{
+    padding: 10px;
+    width: 60px;
+    transition: transform 0.3s ease-in-out;
 }
 
-.card-text img {
-    width: 25px; 
-    height: auto;
-    margin-right: 10px;
+.medsos img:hover{
+    transform: scale(1.2);
 }
 
-.card img:hover {
-    transform: scale(1.1) ;
+.medsos-1{
+    display: flex;
+    justify-content: center;
 }
 
-button{
-    border: none;
-    background: none;
+.medsos-1 img{
+    padding-top: 35px;
+    padding-left: 15px;
+    width: 55px;
+    transition: transform 0.3s ease-in-out;
 }
+
+.medsos-1 img:hover{
+    transform: scale(1.2);
+}
+
+  
+
+
+
+
+
+/* Footer */
 
 .sidebar {
     padding: 15px;
@@ -298,6 +297,28 @@ footer {
     justify-content: center;
     align-items: center;
     padding-bottom: 15px;
+}
+
+
+/* Style untuk notifikasi */
+#notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    z-index: 1000;
+    display: none; /* Awalnya disembunyikan */
+}
+
+#notification.show {
+    display: block; /* Tampilkan notifikasi saat class 'show' ditambahkan */
+}
+
+.hidden {
+    display: none;
 }
 
 /* responsif */
@@ -399,23 +420,4 @@ footer {
          top: 10px;
          text-decoration: none;
     }
-
-    .like-top{
-        margin-left: 50px;
-    }
-
-    .like-top img{
-        width: 30px;
-    }
-
-    .like-top h1{
-        font-size: 25px;
-    }
-
-    .container-product{
-        display: block;
-        margin-left: 28px;
-    }
-
-    
 }

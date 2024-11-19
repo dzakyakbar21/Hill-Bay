@@ -13,7 +13,7 @@ html, body{
 body {
     font-family: 'Montserrat';
     font-weight: 500;
-    background-color: #161618;
+    background-color: #1f1f1f;
     color: white;
 }
 
@@ -23,24 +23,33 @@ header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding-right: 30px;
+    padding-left: 10px;
+    
 }
 
 .logo {
     font-size: 24px;
 }
 
-.searchbar {
-    display: flex;
+.search-bar {
+    position: relative;
+    width: 100%;
+    max-width: 200px;
 }
 
-.search-bar {
-    font-family: 'Montserrat';
-    width: 300px;
-    padding: 10px;
+.search-bar input[type="text"] {
+    color: white;
+    width: 100%;
+    padding: 10px 10px 10px 40px; 
+    border: 2px solid #D6BC9B;
     border-radius: 30px;
-    border: 1px solid #ccc;
     font-size: 16px;
+    background-color: #f3f4f614;
+    background-image: url('../assets/search.png'); 
+    background-position: 10px center; 
+    background-repeat: no-repeat; /* Mencegah pengulangan gambar */
+    background-size: 20px 20px; /* Atur ukuran ikon */  
 }
 
 .hamburger{
@@ -175,6 +184,7 @@ img.login-logo{
 /* favorite */
 
 .cart-top {
+    color: #D6BC9B;
     display: flex;
     align-items: center;
     margin-left: 160px;
@@ -201,9 +211,8 @@ img.login-logo{
 }
 
 .card {
-    background-color: white;
+    background-color: #272727;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 290px;
     height: 400px;
     overflow: hidden;
@@ -225,11 +234,11 @@ img.login-logo{
     display: flex;
     font-weight: 700;
     font-size: 24px;
-    color: #333;
+    color: white;
 }
 
 .card-text-discount{
-    color: black;
+    color: white;
     display: flex;
     text-decoration: line-through;
     font-size: 13px;
@@ -242,13 +251,13 @@ img.login-logo{
     margin: 15px 0;
     font-size: 16px;
     font-weight: 600;
-    color: #000000;
+    color: white;
 }
 
 p.counter {
     margin-top: -33px;
     margin-left: 215px;
-    color: black;
+    color: white;
 }
 
 .card-text img {
@@ -261,11 +270,7 @@ p.counter {
     transform: scale(1.1) ;
 }
 
-button{
-    border: none;
-    background: none;
-}
-
+/* Medsos & Footer */
 .sidebar {
     padding: 15px;
 }
@@ -291,7 +296,10 @@ button{
 }
 
 footer {
-    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
 }
 
 /* responsif */
