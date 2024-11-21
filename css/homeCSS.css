@@ -322,38 +322,48 @@ img.login-logo{
 
 .column1 {
     flex: 0;
-    padding: 40px;
+    padding: 10px;
 }
 
 .card {
     background-color: #272727;
-    width: 300px;
+    width: 320px;
     height: 450px;
     overflow: hidden;
     text-align: center;
     transition: transform 0.2s ease-in-out;
 }
 
+.card a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .card-img {
-    width: auto;
-    height: 250px;
+    width: 330px;
+    height: 300px;
     padding: 10px;
     transition: transform 0.2s ease-in-out;
-    margin-left: -20px;
 }
 
 .card-body {
-    padding: 60px;
+    padding: 15px;
 }
 
 .card-title {
-    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 24px;
     color: white;
 }
 
 .card-text {
-    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
     font-size: 16px;
     color: white;
 }
@@ -366,6 +376,7 @@ img.login-logo{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 30px 0px 0px 0px;
     font-weight: 350;
     font-size: 30px;
     
@@ -450,8 +461,17 @@ footer {
 
 /* responsif */
 @media (max-width: 1441px) {
-    .column1{
-        padding: 30px;
+   .card{
+        width: 330px;
+    }
+
+    .card-img{
+        margin-left: -20px;
+        height: 300px;
+    }
+
+    .card-body{
+        padding: 20px;
     }
 }
 
@@ -465,17 +485,22 @@ footer {
     }
 
     .hero-3 img{
-        width: 1000px;
+        width: 950px;
+    }
+
+    .column1{
+        padding: 10px;
     }
 
     .card{
-        width: 200px;
+        width: 220px;
         height: 350px;
     }
 
     .card-img{
         width: 240px;
         height: 200px;
+        margin-left: -10px;
     }
     .card-body{
         padding: 30px;
@@ -631,7 +656,7 @@ footer {
     }
 
     .hero-3 img{
-        width: 650px;
+        width: 700px;
     }
 
     .container-explore{
@@ -652,37 +677,38 @@ footer {
     }
 
     .card{
-        width: 150px;
+        width: 160px;
         height: 280px;
     }
 
     .card-img{
         width: 180px;
         height: 160px;
-        margin-left: -15px;
+        margin-left: -10px;
     }
 
     .card-body{
-        padding: 8px;
+        padding: 20px;
     }
 
     .card-title{
         font-size: 15px;
     }
 
+    .card-text{
+        font-size: 13px;
+    }
+
     .discover {
-        margin-left: 0;
-        text-align: center;
+        padding: 30px 0px 0px 0px;
     }
 
     .container-spend {
-        margin-left: 0;
-        text-align: center;
+        font-size: 25px;
     }
 
-    .container-social {
-        margin-left: 0;
-        text-align: center;
+    .container-social img{
+       width: 30px;
     }
 
     .container-sidebar{
@@ -691,11 +717,162 @@ footer {
         align-items: center;
         font-size: 10px;
     }
+
+    footer{
+        font-size: 13px;
+    }
 }
 
 @media (max-width: 426px) {
-    .hero-3 img {
-        width: 350px;
+    .hero h1{
+        font-size: 30px;
+    }
+
+    .hero h1 span{
+        font-size: 40px;
+    }
+
+    .hero p{
+        font-size: 16px;
+    }
+
+    .container-what{
+        font-size: 15px;
+    }
+
+    .container-what span{
+        font-size: 30px;
+    }
+
+    .column.left-column1 {
+        padding: 20px 0px 0px 0px;
+    }
+
+    .column.left-column1 img{
+        width: 250px;
+    }
+
+    .column{
+        font-size: 16px;
+        padding: 70px;
+    }
+
+    .hero-3 img{
+        width: 400px;
+    }
+
+    .column1{
+        padding: 10px;
+    }
+
+    .card{
+        width: 180px;
+        height: 280px;
+    }
+
+    .card-img{
+        width: 200px;
+        height: 180px;
+    }
+
+    .card-body{
+        padding: 10px;
+    }
+
+    .discover{
+        padding: 20px 0px 0px 0px;
+        font-size: 20px;
+    }
+
+    .discover span{
+        font-size: 30px;
+    }
+
+    .container-spend{
+        font-size: 20px;
+    }
+
+    .container-social img {
+        width: 30px;
+    }
+
+    footer{
+        font-size: 10px;
+    }
+
+}
+
+@media (max-width: 376px) {
+    .hero h1{
+        font-size: 20px;
+    }
+
+    .hero h1 span{
+        font-size: 40px;
+    }
+
+    .hero p{
+        font-size: 15px;
+    }
+
+    .container-what{
+        font-size: 15px;
+    }
+
+    .container-what span{
+        font-size: 30px;
+    }
+
+    .column.left-column1 {
+        padding: 20px 0px 0px 0px;
+    }
+
+    .column.left-column1 img{
+        width: 250px;
+    }
+
+    .column{
+        font-size: 15px;
+        padding: 70px;
+    }
+
+    .hero-3 img{
+        width: 330px;
+    }
+
+    .card{
+        width: 160px;
+        height: 250px;
+    }
+
+    .card-img{
+        width: 180px;
+        height: 160px;
+    }
+
+    .card-body{
+        padding: 10px;
+    }
+
+    .discover{
+        padding: 20px 0px 0px 0px;
+        font-size: 20px;
+    }
+
+    .discover span{
+        font-size: 30px;
+    }
+
+    .container-spend{
+        font-size: 20px;
+    }
+
+    .container-social img {
+        width: 30px;
+    }
+
+    footer{
+        font-size: 10px;
     }
 }
 
@@ -743,7 +920,7 @@ footer {
     }
 
     .card-img{
-        width: 230px;
+        width: 220px;
         height: 200px;
     }
 
@@ -761,7 +938,7 @@ footer {
     }
 
     .container-spend{
-        font-size: 20px;
+        font-size: 19px;
     }
 
     .container-social img {
