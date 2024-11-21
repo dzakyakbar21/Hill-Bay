@@ -205,7 +205,7 @@ img.login-logo{
 .hero-content-2 {
     display: block;
     margin-left: 800px;
-    margin-top: -110px;
+    margin-top: -122px;
 }
 
 .hero-content-2 p {
@@ -315,6 +315,9 @@ img.login-logo{
 
 .container-product {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
 }
 
 .column1 {
@@ -323,10 +326,9 @@ img.login-logo{
 }
 
 .card {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #272727;
     width: 300px;
+    height: 450px;
     overflow: hidden;
     text-align: center;
     transition: transform 0.2s ease-in-out;
@@ -334,24 +336,26 @@ img.login-logo{
 
 .card-img {
     width: auto;
-    height: 350px;
+    height: 250px;
+    padding: 10px;
     transition: transform 0.2s ease-in-out;
+    margin-left: -20px;
 }
 
 .card-body {
-    padding: 20px;
+    padding: 60px;
 }
 
 .card-title {
     margin: 0;
     font-size: 24px;
-    color: #333;
+    color: white;
 }
 
 .card-text {
     margin: 15px 0;
     font-size: 16px;
-    color: #000000;
+    color: white;
 }
 
 .card img:hover {
@@ -387,14 +391,19 @@ img.login-logo{
 }
 
 .container-spend {
-   font-size: 30px; 
-   padding: 40px;
-   margin-left: 530px;
-   font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px; 
+    padding: 40px;
+    font-weight: 700;
 }
 
 .container-social {
-    margin-left: 715px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     cursor: pointer;
 }
 
@@ -440,7 +449,45 @@ footer {
 
 
 /* responsif */
-@media (max-width: 768px) {
+@media (max-width: 1441px) {
+    .column1{
+        padding: 30px;
+    }
+}
+
+@media (max-width: 1025px) {
+    .hero-content-1{
+        margin-right: 420px;
+    }
+
+    .hero-content-2{
+        margin-left: 600px;
+    }
+
+    .hero-3 img{
+        width: 1000px;
+    }
+
+    .card{
+        width: 200px;
+        height: 350px;
+    }
+
+    .card-img{
+        width: 240px;
+        height: 200px;
+    }
+    .card-body{
+        padding: 30px;
+    }
+
+    .card-title{
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 769px) {
     header nav {
         flex-direction: column;
     }
@@ -584,7 +631,7 @@ footer {
     }
 
     .hero-3 img{
-        width: 350px;
+        width: 650px;
     }
 
     .container-explore{
@@ -593,16 +640,34 @@ footer {
     }
 
     .column.left-column2{
-        padding: 36px;
+        padding: 80px 0px 0px 0px;
     }
 
     .container-product {
-        flex-direction: column;
         align-items: center;
     }
 
     .column1 {
         padding: 10px;
+    }
+
+    .card{
+        width: 150px;
+        height: 280px;
+    }
+
+    .card-img{
+        width: 180px;
+        height: 160px;
+        margin-left: -15px;
+    }
+
+    .card-body{
+        padding: 8px;
+    }
+
+    .card-title{
+        font-size: 15px;
     }
 
     .discover {
@@ -628,3 +693,82 @@ footer {
     }
 }
 
+@media (max-width: 426px) {
+    .hero-3 img {
+        width: 350px;
+    }
+}
+
+@media (max-width: 321px) {
+    .hero h1{
+        font-size: 20px;
+    }
+
+    .hero h1 span{
+        font-size: 40px;
+    }
+
+    .hero p{
+        font-size: 12px;
+    }
+
+    .container-what{
+        font-size: 15px;
+    }
+
+    .container-what span{
+        font-size: 30px;
+    }
+
+    .column.left-column1 {
+        padding: 20px 0px 0px 0px;
+    }
+
+    .column.left-column1 img{
+        width: 250px;
+    }
+
+    .column{
+        font-size: 13px;
+        padding: 70px;
+    }
+
+    .hero-3 img{
+        width: 280px;
+    }
+
+    .card{
+        width: 200px;
+        height: 280px;
+    }
+
+    .card-img{
+        width: 230px;
+        height: 200px;
+    }
+
+    .card-body{
+        padding: 0px;
+    }
+
+    .discover{
+        padding: 20px 0px 0px 0px;
+        font-size: 20px;
+    }
+
+    .discover span{
+        font-size: 30px;
+    }
+
+    .container-spend{
+        font-size: 20px;
+    }
+
+    .container-social img {
+        width: 30px;
+    }
+
+    footer{
+        font-size: 10px;
+    }
+}
