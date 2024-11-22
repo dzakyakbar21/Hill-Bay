@@ -117,9 +117,9 @@ nav ul li a:hover{
 .modal-box{
     z-index: 1;
     width: 500px;
-    height: 500px;
+    height: auto;
     padding: 50px 0px;
-    margin-left: -850px;
+    margin-left: -812px;
     margin-top: 100px;
     background-color: #ffffff;
     display: none;
@@ -476,8 +476,28 @@ footer {
 }
 
 @media (max-width: 1025px) {
+    .modal-box{
+        width: 430px;
+        height: 400px;
+        margin-left: -550px;
+        margin-top: 50px;
+    }
+
+    .close-modal-btn{
+        font-size: 30px;
+    }
+
+    .login-form{
+        width: 350px;
+    }
+   
     .hero-content-1{
         margin-right: 420px;
+    }
+
+    img.login-logo{
+        width: 80px;
+        margin-left: 180px;
     }
 
     .hero-content-2{
@@ -514,6 +534,9 @@ footer {
 
 @media (max-width: 769px) {
     header nav {
+        display: flex;
+        justify-content: center;
+        padding: 0;
         flex-direction: column;
     }
 
@@ -803,6 +826,19 @@ footer {
 }
 
 @media (max-width: 376px) {
+    .modal-box{
+        width: 280px;
+        margin-left: -50px;
+    }
+
+    .close-modal-btn{
+        font-size: 20px;
+    }
+
+    .login-form{
+        width: 250px;
+    }
+    
     .hero h1{
         font-size: 20px;
     }
@@ -877,6 +913,19 @@ footer {
 }
 
 @media (max-width: 321px) {
+    .modal-box{
+        width: 250px;
+        margin-left: -40px;
+    }
+
+    .close-modal-btn{
+        font-size: 20px;
+    }
+
+    .login-form{
+        width: 220px;
+    }
+    
     .hero h1{
         font-size: 20px;
     }
