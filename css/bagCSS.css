@@ -6,9 +6,30 @@
     box-sizing: border-box;
 }
 
-html, body{
-    overflow-x: hidden;
+
+::-webkit-scrollbar {
+    width: 12px; /* Lebar scrollbar */
 }
+
+::-webkit-scrollbar-track {
+    background: transparent; /* Track transparan */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #6c757d; /* Warna slider */
+    border-radius: 10px; /* Membuat slider membulat */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #495057; /* Warna slider saat dihover */
+}
+
+html, body{
+   
+    scroll-behavior: smooth;
+}
+
+
 
 body {
     font-family: 'Montserrat';
@@ -17,7 +38,15 @@ body {
     color: white;
 }
 
-/* Home */
+main{
+    display: flex;
+    flex-flow:column;
+    justify-content: center;
+    justify-self: center;
+    row-gap: 20px;
+}
+
+
 
 header nav {
     display: flex;
@@ -25,6 +54,7 @@ header nav {
     align-items: center;
     padding-right: 30px;
     padding-left: 10px;
+    
     
 }
 
@@ -98,7 +128,7 @@ nav ul li a {
 }
 
 nav ul li a:hover{
-    color: #FFB1B1;
+    color: #D6BC9B  ;
 }
 
 .icons i {
@@ -187,9 +217,9 @@ img.login-logo{
     color: #D6BC9B;
     display: flex;
     align-items: center;
-    margin-left: 160px;
-    margin-top: 50px;
-    margin-bottom: 40px;
+   
+   
+  
     gap: 10px;
 }
 
@@ -203,21 +233,24 @@ img.login-logo{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 8px;
+    flex-flow: wrap;
 }
 
 .column1 {
     flex: 0;
-    margin: 15px;
 }
 
 .card {
     background-color: #272727;
-    border-radius: 10px;
-    width: 290px;
-    height: 400px;
+   
+    width: 280px;
     overflow: hidden;
     text-align: center;
     transition: transform 0.2s ease-in-out;
+    padding: 20px;
+    display: flex;
+    flex-flow: column;
 }
 
 .card-body{
@@ -225,9 +258,10 @@ img.login-logo{
 }
 
 .card-img {
-    width: 290px;
-    height: 290px;
+    width: auto;
+    min-height: 250px;
     transition: transform 0.2s ease-in-out;
+    object-fit:cover;
 }
 
 .card-title {
@@ -245,14 +279,15 @@ img.login-logo{
 }
 
 .card-text {
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin: 15px 0;
     font-size: 16px;
     font-weight: 600;
     color: white;
 }
+
 
 p.counter {
     margin-top: -33px;
@@ -269,6 +304,44 @@ p.counter {
 .card img:hover {
     transform: scale(1.1) ;
 }
+
+
+.counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Tombol Custom */
+.counter .btn {
+    width: 1.2rem;
+   
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent; 
+    color: white;
+    border: 0.3px solid white;
+    
+    transition: all 0.2s ease-in-out;
+}
+
+.counter .btn:active {
+    box-shadow: 0 2px #0e0e0e; /* Bayangan saat ditekan */
+    transform: translateY(2px); /* Efek klik */
+}
+
+/* Input */
+.counter input {
+    max-width: 30px;
+    max-height: 30px;
+    text-align: center;
+    font-size:15px ;
+    border: 1px solid #ccc;
+    background-color: transparent;
+    color: hwb(0 100% 0%);
+    padding: 5px;
+}
+
 
 /* Medsos & Footer */
 .sidebar {
@@ -292,7 +365,7 @@ p.counter {
 }
 
 .sidebar a:hover {
-    color: #FFB1B1;
+    color: #D6BC9B;
 }
 
 footer {
@@ -302,10 +375,49 @@ footer {
     padding-bottom: 15px;
 }
 
+.price-counter {
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Container Counter */
+
+
+
+@media screen and (max-width: 1024px) {
+    .container-product {
+        max-width: 1000px;
+        display: flex;
+        
+    }
+
+    .card-img {
+        min-height: 180px;
+    }
+
+    .card {
+        max-width: 220px;
+        max-height: 300px;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+  
+}
+
+
+
+
 /* responsif */
 @media (max-width: 768px) {
     header nav {
-        flex-direction: column;
+        flex-direction: column; 
+        justify-content: center;
+        padding: 0;
     }
 
     .search-bar {
@@ -403,19 +515,99 @@ footer {
     }
 
     .cart-top{
+        max-width: 700px;
         margin-left: 50px;
     }
 
     .cart-top img{
-        width: 30px;
+        width: 30px;    
     }
 
     .cart-top h1{
         font-size: 25px;
     }
 
-    .container-product{
-        display: block;
-        margin-left: 28px;
+}
+
+
+@media screen and (max-width:426px ) { 
+
+
+    main {
+        gap: 5px;
     }
+
+    .cart-top h1 {
+        font-size: 15px;
+    }
+
+    .cart-top img {
+        width: 15px;
+    }
+
+
+
+    .card {
+        max-width: 150px;
+        max-height: 180px;
+    }
+    
+    .card-img {
+        max-width: 130px;
+        min-height: 110px;
+    }
+
+    .container-product .column1 .card-title  {
+        font-size: 10px;
+    }
+
+ 
+
+    .card-text {
+        font-size: rem  ;
+        margin-top: 3px;
+        font-size:9px;
+       margin: 3px 0px;
+        margin-right: 1px;
+    }
+
+    .card-text-discount {
+        font-size: 6px;
+        margin-bottom: 3px;
+    }
+    
+    .card-body{
+        max-height: 60px;
+    }
+    
+
+    .sidebar a {
+        font-size: 10px;
+    }
+
+    .counter .btn {
+        width: 0.8rem;
+        font-size: 10px;
+
+        transition: all 0.2s ease-in-out;
+    }
+    
+    .counter .btn:active {
+        box-shadow: 0 2px #0e0e0e; /* Bayangan saat ditekan */
+        transform: translateY(2px); /* Efek klik */
+    }
+    
+    /* Input */
+    .counter input {
+        max-width: 15px;
+        max-height: 13px;
+        text-align: center;
+        font-size:6px ;
+        border: 1px solid #ccc;
+        background-color: transparent;
+        color: hwb(0 100% 0%);
+     
+    }
+
+    
 }

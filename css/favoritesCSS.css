@@ -6,9 +6,48 @@
     box-sizing: border-box;
 }
 
-html, body{
-    overflow-x: hidden;
+
+::-webkit-scrollbar {
+    width: 12px; /* Lebar scrollbar */
 }
+
+::-webkit-scrollbar-track {
+    background: transparent; /* Track transparan */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #6c757d; /* Warna slider */
+    border-radius: 10px; /* Membuat slider membulat */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #495057; /* Warna slider saat dihover */
+}
+
+html, body{
+   
+    scroll-behavior: smooth;
+}
+
+
+header {
+    position: sticky;
+    top: 0;
+    background-color:#1f1f1f;
+    z-index: 1050;
+}
+
+
+main{
+    display: flex;
+    flex-flow:column;
+    justify-content: center;
+    justify-self: center;
+    row-gap: 20px;
+}
+
+
+
 
 body {
     font-family: 'Montserrat';
@@ -98,7 +137,7 @@ nav ul li a {
 }
 
 nav ul li a:hover{
-    color: #FFB1B1;
+    color: #D6BC9B;
 }
 
 .icons i {
@@ -187,9 +226,9 @@ img.login-logo{
     color: #D6BC9B;
     display: flex;
     align-items: center;
-    margin-left: 160px;
-    margin-top: 50px;
-    margin-bottom: 40px;
+   
+   
+  
     gap: 10px;
 }
 
@@ -203,21 +242,25 @@ img.login-logo{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 8px;
+    flex-flow: wrap;
 }
 
 .column1 {
-    flex: 0;
-    margin: 15px;
+    display: flex;
+   
 }
 
 .card {
     background-color: #272727;
-    border-radius: 10px;
-    width: 290px;
-    height: 400px;
+   
+    width: 280px;
     overflow: hidden;
     text-align: center;
     transition: transform 0.2s ease-in-out;
+    padding: 20px;
+    display: flex;
+    flex-flow: column;
 }
 
 .card-body{
@@ -225,9 +268,10 @@ img.login-logo{
 }
 
 .card-img {
-    width: 290px;
-    height: 290px;
+    width: auto;
+    min-height: 250px;
     transition: transform 0.2s ease-in-out;
+    object-fit:cover;
 }
 
 .card-title {
@@ -245,9 +289,9 @@ img.login-logo{
 }
 
 .card-text {
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin: 15px 0;
     font-size: 16px;
     font-weight: 600;
@@ -290,7 +334,7 @@ button{
 }
 
 .sidebar a:hover {
-    color: #FFB1B1;
+    color: #D6BC9B;
 }
 
 footer {
@@ -300,8 +344,36 @@ footer {
     padding-bottom: 15px;
 }
 
+
+@media screen and (max-width : 1024px) {
+    .container-product {
+        max-width: 1000px;
+        display: flex;
+        
+    }
+
+    .card-img {
+        min-height: 180px;
+    }
+
+    .card {
+        max-width: 220px;
+        max-height: 300px;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    .card-text img {
+        width: 19px;
+    }
+}
+
 /* responsif */
 @media (max-width: 768px) {
+    
+    
     header nav {
         flex-direction: column;
     }
@@ -388,7 +460,7 @@ footer {
     .login-form button{
         width: 100%;
         padding: 10px;
-        margin-top: 10px;
+        margin-top: 9px;
     }
     
     .close-modal-btn{
@@ -400,7 +472,9 @@ footer {
          text-decoration: none;
     }
 
-    .like-top{
+    
+    .like-top {
+        max-width: 700px;
         margin-left: 50px;
     }
 
@@ -411,11 +485,61 @@ footer {
     .like-top h1{
         font-size: 25px;
     }
-
-    .container-product{
-        display: block;
-        margin-left: 28px;
-    }
-
     
 }
+
+@media screen and (max-width:426px) {
+
+
+    main {
+        gap: 5px;
+    }
+
+    .like-top img {
+        width: 15px;
+    }
+
+    .like-top h1 {
+        font-size: 15px;
+    }
+
+    .card {
+        max-width: 150px;
+        max-height: 180px;
+    }
+
+    .card-img {
+        max-width: 130px;
+        min-height: 110px;
+    }
+
+    .container-product .column1 .card-title  {
+        font-size: 10px;
+    }
+
+    .card-text-discount {
+        font-size: 6px;
+        margin-bottom: 3px;
+    }
+
+    .card-text {
+        font-size: rem  ;
+        margin-top: 3px;
+        font-size:9px;
+    }
+
+    .card-text img {
+        width: 9px;
+        margin-right: 1px;
+    }
+    
+    .card-body{
+        max-height: 60px;
+    }
+
+    .sidebar a {
+        font-size: 10px;
+    }
+
+}
+    
