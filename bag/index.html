@@ -90,60 +90,86 @@
         </nav>
     </header>
 
+   <main>
     <div class="cart-top">
         <img src="../assets/bag border yellow.png" alt="">
         <h1>Bag</h1>
     </div>
 
     <div class="container-product">
+        
         <div class="column1">
             <div class="card">
                 <img src="../assets/GreatnessBeigeTee.png" alt="Card Image" class="card-img">
                 <div class="card-body">
                     <h2 class="card-title">Greatness Tee</h2>
                     <p class="card-text-discount">Rp. 150.000</p>
-                    <p class="card-text">Rp. 110.000
-                        <p class="counter"> (1) </p>
-                    </p>
+                   <div class="price-counter">
+                    <p class="card-text">Rp. 110.000 </p>
+                    <div class="counter" data-id="1">
+                        <button class="btn" onclick="decrement(this)">-</button>
+                        <input type="text" value="0" oninput="validateInput(this)" />
+                        <button class="btn" onclick="increment(this)">+</button>
+                    </div>                
+                   </div>        
                 </div>
-            </div>
+             </div>
         </div>
-        <div class="column1">
-            <div class="card">
-                <img src="../assets/GreatnessBlackTee.png" alt="Card Image" class="card-img">
-                <div class="card-body">
-                    <h2 class="card-title">Butterfly Tee</h2>
-                    <p class="card-text-discount">Rp. 150.000</p>
-                    <p class="card-text">Rp. 110.000
-                        <p class="counter"> (2) </p>
-                    </p>
-                </div>
-            </div>
-        </div>
+        
         <div class="column1">
             <div class="card">
                 <img src="../assets/GreatnessBeigeTee.png" alt="Card Image" class="card-img">
                 <div class="card-body">
                     <h2 class="card-title">Greatness Tee</h2>
                     <p class="card-text-discount">Rp. 150.000</p>
-                    <p class="card-text">Rp. 110.000
-                        <p class="counter"> (1) </p>
-                    </p>
+                   <div class="price-counter">
+                    <p class="card-text">Rp. 110.000 </p>
+                    <div class="counter" data-id="2">
+                        <button class="btn" onclick="decrement(this)">-</button>
+                        <input type="text" value="0" oninput="validateInput(this)" />
+                        <button class="btn" onclick="increment(this)">+</button>
+                    </div>               
+                   </div>        
                 </div>
-            </div>
+             </div>
         </div>
+
         <div class="column1">
             <div class="card">
-                <img src="../assets/GreatnessBlackTee.png" alt="Card Image" class="card-img">
+                <img src="../assets/GreatnessBeigeTee.png" alt="Card Image" class="card-img">
                 <div class="card-body">
-                    <h2 class="card-title">Butterfly Tee</h2>
+                    <h2 class="card-title">Greatness Tee</h2>
                     <p class="card-text-discount">Rp. 150.000</p>
-                    <p class="card-text">Rp. 110.000
-                        <p class="counter"> (5) </p>
-                    </p>
+                   <div class="price-counter">
+                    <p class="card-text">Rp. 110.000 </p>
+                    <div class="counter" data-id="3">
+                        <button class="btn" onclick="decrement(this)">-</button>
+                        <input type="text" value="0" oninput="validateInput(this)" />
+                        <button class="btn" onclick="increment(this)">+</button>
+                    </div>                
+                   </div>        
                 </div>
-            </div>
+             </div>
         </div>
+
+        <div class="column1">
+            <div class="card">
+                <img src="../assets/GreatnessBeigeTee.png" alt="Card Image" class="card-img">
+                <div class="card-body">
+                    <h2 class="card-title">Greatness Tee</h2>
+                    <p class="card-text-discount">Rp. 150.000</p>
+                   <div class="price-counter">
+                    <p class="card-text">Rp. 110.000 </p>
+                    <div class="counter" data-id="4">
+                        <button class="btn" onclick="decrement(this)">-</button>
+                        <input type="text" value="0" oninput="validateInput(this)" />
+                        <button class="btn" onclick="increment(this)">+</button>
+                    </div>                
+                   </div>        
+                </div>
+             </div>
+        </div>
+        
     </div>
         
         <div class="container-sidebar">
@@ -156,6 +182,7 @@
                 </ul>
             </div>
         </div>
+   </main>
     
     
     
