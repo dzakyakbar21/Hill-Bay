@@ -12,82 +12,85 @@
 <body>
     <header>
         <nav>
-            <div class="logo">
+            <div class="navbar-container">
+                <div class="logo">
                 <img src="./assets/HillBayLogo.svg" alt="">
-            </div>
-
-            <div class="search-bar">
-                <input type="text" placeholder="Search" >
-            </div>
-
-            <div class="ul-pc">
-                <ul>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li class="batas">|</li>
-                    <li><a href="./products/index.html">PRODUCTS</a></li>
-                    <li class="batas">|</li>
-                    <li><a href="./contact/index.html">CONTACT</a></li>
-                </ul>
-            </div>
-            
-
-            <div class="top-menu" >
-                <div class="close">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                    </svg>
                 </div>
-               
-                <div class="ul-handphone">
+
+                <div class="search-bar">
+                    <input type="text" placeholder="Search" >
+                </div>
+
+                <div class="ul-pc">
                     <ul>
                         <li><a href="#about">ABOUT</a></li>
                         <li class="batas">|</li>
                         <li><a href="./products/index.html">PRODUCTS</a></li>
                         <li class="batas">|</li>
-                        <li><a href="#social">CONTACT</a></li>
+                        <li><a href="./contact/index.html">CONTACT</a></li>
                     </ul>
                 </div>
                 
-            </div>
 
-            <div class="icons">
-                <i class="like">
-                <a href="./favorites/index.html"><img src="./assets/like.png" alt=""></a>
-                </i>
-                <i class="cart">
-                    <a href="./bag/index.html"><img src="./assets/cart.png" alt=""></a>
-                </i>
-                <i class="user">    
-                    <img onclick="showModal()" src="./assets/profile.png" alt="">
-
-                    <div class="modal-box" id="modal-box" >
-
-                        <img class="login-logo" src="./assets/hillbay logo grey.png" alt="">
-
-                        <a href="#" class="close-modal-btn" onclick="closeModal()">X</a>
-            
-                      <form action="#" class="login-form">
-                        <div>
-                            <label for="username">Username</label>
-                            <input type="text" name="username" id="usernmae">
-                        </div>
-                        <div>
-                            <label for="password">Password</label>
-                            <input type="password" name="password" id="password">
-                        </div>
-                        <div>
-                            <button>Login</button>
-                        </div>
-                        <div class="sign-up">
-                            <p>dont have an account?<a href=""> sign up</a></p>
-                        </div>
-                      </form>  
+                <div class="top-menu" >
+                    <div class="close">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                        </svg>
                     </div>
+                
+                    <div class="ul-handphone">
+                        <ul>
+                            <li><a href="#about">ABOUT</a></li>
+                            <li class="batas">|</li>
+                            <li><a href="./products/index.html">PRODUCTS</a></li>
+                            <li class="batas">|</li>
+                            <li><a href="./contact/index.html">CONTACT</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
 
-                </i>
-                <i class="hamburger">
-                    <img src="./assets/Hamburger Icon.png" alt="">
-                </i>
+                    <div class="icons">
+                    <i class="like">
+                    <a href="./favorites/index.html"><img src="./assets/like.png" alt=""></a>
+                    </i>
+                    <i class="cart">
+                        <a href="./bag/index.html"><img src="./assets/cart.png" alt=""></a>
+                    </i>
+                    <i class="user">    
+                        <img onclick="showModal()" src="./assets/profile.png" alt="">
+    
+                        <div class="modal-box" id="modal-box" >
+    
+                            <img class="login-logo" src="./assets/hillbay logo grey.png" alt="">
+    
+                            <a href="#" class="close-modal-btn" onclick="closeModal()">X</a>
+                
+                          <form action="#" class="login-form">
+                            <div>
+                                <label for="username">Username</label>
+                                <input type="text" name="username" id="usernmae">
+                            </div>
+                            <div>
+                                <label for="password">Password</label>
+                                <input type="password" name="password" id="password">
+                            </div>
+                            <div>
+                                <button>Login</button>
+                            </div>
+                            <div class="sign-up">
+                                <p>dont have an account?<a href=""> sign up</a></p>
+                            </div>
+                          </form>  
+                        </div>
+    
+                    </i>
+                    <i class="hamburger">
+                        <img src="./assets/Hamburger Icon.png" alt="">
+                    </i>
+                </div>
+            
             </div>
             
         </nav>
