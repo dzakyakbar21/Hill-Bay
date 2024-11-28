@@ -24,6 +24,21 @@ document.addEventListener("DOMContentLoaded", function() {
     document.querySelector(".close-modal-btn").onclick = closeModal;
 });
 
+window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('nav');
+    if (window.scrollY > 50) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
+  
+  
+
+
+
+
+
 // Fungsi untuk mengambil daftar favorit dari localStorage
 function getFavorites() {
     return JSON.parse(localStorage.getItem('favorites')) || [];
@@ -101,40 +116,6 @@ function displayFavorites() {
         favoriteList.appendChild(li);
     });
 }
-
-
-// counter bag 
-
-// Fungsi untuk menambah nilai
-function increment(button) {
-    const counterDiv = button.parentElement; // Cari elemen counter terdekat
-    const input = counterDiv.querySelector("input"); // Ambil input dalam counter ini
-    let count = parseInt(input.value) || 0; // Ambil nilai saat ini
-    count++;
-    input.value = count; // Perbarui nilai di input
-}
-
-// Fungsi untuk mengurangi nilai
-function decrement(button) {
-    const counterDiv = button.parentElement; // Cari elemen counter terdekat
-    const input = counterDiv.querySelector("input"); // Ambil input dalam counter ini
-    let count = parseInt(input.value) || 0; // Ambil nilai saat ini
-    if (count > 0) {
-        count--;
-    }
-    input.value = count; // Perbarui nilai di input
-}
-
-// Fungsi untuk memvalidasi input
-function validateInput(input) {
-    input.value = input.value.replace(/[^0-9]/g, ''); // Hapus karakter non-angka
-    if (input.value === "") {
-        input.value = 0; // Jika kosong, set ke 0
-    }
-}
-
-
-
 
 // Memuat daftar favorit saat halaman favorites.html dimuat
 window.onload = displayFavorites;
