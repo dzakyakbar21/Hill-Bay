@@ -313,12 +313,12 @@ main{
 
 .display-tee img {
     width: 800px;
-    margin-top: 20px;
+    padding-top: 40px;
     transition: transform 0.5s ease-in-out;
 }
 
 .display-tee img:hover{
-    transform: scale(1.3);
+    transform: scale(1.2);
 }
 
 .container-what {
