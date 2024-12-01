@@ -580,7 +580,7 @@ footer {
 
 
 @media screen and (max-width: 769px) {
-    header nav {
+    nav {
         display: flex;
         justify-content: center;
         padding: 0;

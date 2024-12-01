@@ -6,6 +6,23 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+    width: 12px; /* Lebar scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: transparent; /* Track transparan */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #6c757d; /* Warna slider */
+    border-radius: 10px; /* Membuat slider membulat */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #495057; /* Warna slider saat dihover */
+}
+
 html, body{
     overflow-x: hidden;
 }
@@ -17,16 +34,27 @@ body {
     color: white;
 }
 
-/* Home */
+/* Navbar */
 
-header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 30px;
-    padding-left: 10px;
-    
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: white;
+    z-index: 1000;
+    transition: background 1.0s ease; /* animasi transisi */
+  }
+
+nav.scrolled {
+background: #1f1f1ff4; /* tranparansi scroll */
 }
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
 
 .logo {
     font-size: 24px;
@@ -40,16 +68,18 @@ header nav {
 
 .search-bar input[type="text"] {
     color: white;
-    width: 100%;
-    padding: 10px 10px 10px 40px; 
+    width: 90%;
+    min-height: 42.4px;
+ 
+    padding: 10px 10px 10px 40px;
     border: 2px solid #D6BC9B;
     border-radius: 30px;
     font-size: 16px;
     background-color: #f3f4f614;
-    background-image: url('../assets/search.png'); 
-    background-position: 10px center; 
+    background-image: url('../assets/search.png');
+    background-position: 10px center;
     background-repeat: no-repeat; /* Mencegah pengulangan gambar */
-    background-size: 20px 20px; /* Atur ukuran ikon */  
+    background-size: 20px 20px; /* Atur ukuran ikon */
 }
 
 
@@ -108,8 +138,8 @@ nav ul li a:hover{
 }
 
 .icons img {
-    width: 25px;  
-    height: auto; 
+    width: 20px;
+    height: auto;
 }
 
 /* login */
@@ -184,6 +214,9 @@ img.login-logo{
 
 /* Contact */
 
+main{
+    margin-top: 106px;
+}
 .meet h1{
     display: flex;
     justify-content: center;
