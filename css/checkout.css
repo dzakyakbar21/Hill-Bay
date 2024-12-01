@@ -1,0 +1,581 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    background-color: #1f1f1f;
+    color: white;
+}
+
+/* Home */
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+    padding-left: 10px;
+    
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.search-bar {
+    position: relative;
+    width: 100%;
+    max-width: 200px;
+}
+
+.search-bar input[type="text"] {
+    color: white;
+    width: 100%;
+    padding: 10px 10px 10px 40px; 
+    border: 2px solid #D6BC9B;
+    border-radius: 30px;
+    font-size: 16px;
+    background-color: #f3f4f614;
+    background-image: url('../assets/search.png'); 
+    background-position: 10px center; 
+    background-repeat: no-repeat; /* Mencegah pengulangan gambar */
+    background-size: 20px 20px; /* Atur ukuran ikon */  
+}
+
+
+.hamburger{
+    display: none;
+}
+
+.top-menu {
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    right: -100vw;
+    bottom: 0;
+    background-color: #2A2A2A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw ;
+    transition: 1s;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.close svg {
+    width: 30px;
+}
+
+nav .ul-pc ul {
+    list-style: none;
+    display: flex;
+}
+
+nav .ul-pc ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover{
+    color: #D6BC9B;
+}
+
+.icons i {
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.icons img {
+    width: 25px;  
+    height: auto; 
+}
+
+/* login */
+.modal-box{
+    z-index: 1;
+    width: 500px;
+    height: 500px;
+    padding: 50px 0px;
+    margin-left: -850px;
+    margin-top: 100px;
+    background-color: #ffffff;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+img.login-logo{
+    width: 100px;
+    margin-left: 200px;
+    
+}
+
+.login-form{
+    color: black;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.login-form div{
+    margin-bottom: 15px;
+}
+
+.login-form label{
+    display: block;
+}
+
+.login-form input{
+    width: 100%;
+    line-height: 2;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.login-form button{
+    border-radius: 20px;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.close-modal-btn{
+    color: black;
+     font-size: 30px;
+     position: absolute;
+     right: 10px;
+     top: 10px;
+     text-decoration: none;
+}
+
+.google-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.google-btn img{
+    width: 50px;
+}
+
+/* checkout */
+
+main {
+    width: 100%;
+    max-width: 1400px;
+    margin-inline: auto;
+    padding: 2rem 4rem;
+    gap:2rem;
+    display: flex;
+    flex-flow: column;
+    
+}
+
+#content {
+    display: flex;
+    flex-flow: column;
+    gap: 3rem;
+}
+
+.checkout-heading {
+    display: flex;
+    
+   
+    
+    
+}
+
+.logo-and-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.checkout-container {
+    display: flex;
+}
+
+.address-container {
+    gap: 1rem;
+    display: flex;
+    flex-flow: column;
+    gap: 1rem   ;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 30px;
+    width: 100%;
+    margin-inline: auto;
+}
+
+.address-title {
+    justify-content: center;
+    
+}
+.address-title p {
+    font-size: 1.5rem;
+    
+}
+
+.name-contact {
+    font-size: 1.5rem;
+    display: flex;
+    flex-flow: column;
+    flex: 1;
+    text-align: center;
+    
+}
+
+.name-adress-go {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    
+}
+
+.address {
+    display: flex;
+    flex: 3;
+    justify-content: center ;
+}
+.address textarea {
+    height: 120px;
+    display: flex;
+    flex: 5;
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+
+.change-button button {
+    padding: 10px 20px 10px 20px ;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    color: white    ;   
+}
+
+.container-bag {
+    border: 1px solid rgb(255, 255, 255);
+}
+
+table {
+    justify-content: center;
+    display: flex;
+    border: 1px solid;
+    padding: 20px;
+
+}
+
+tbody {
+    justify-content:center;
+    display: flex;
+    flex-flow: wrap;
+    gap: 2rem;
+
+}
+
+.table-product-heading  {
+    display: flex;
+    text-align: center;
+    gap: 9rem;
+    font-size: 1.4rem;
+    justify-content: center;
+    
+    
+}
+.table-product-heading tr th {
+    display: flex;
+}
+
+.card-horizontal {
+    
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.img-title {
+    display: flex;
+    flex: 0;
+    align-items: center;
+    gap: 1rem;
+}
+
+.img-product {
+    border: 1px solid white;
+}
+
+.img-title img {
+    max-width: 100px;
+    
+    object-fit:cover;
+    object-position:center;
+}
+
+
+.product-color {
+    display: flex;
+    padding-left: 70px;
+}
+
+.product-size {
+    padding-left: 150px;
+}
+
+.product-prize {
+    padding-left: 120px;
+}
+
+.product-total {
+    padding-left: 150px;
+}
+
+.Subtotal-product {
+    padding-left: 170px;
+}
+
+.color-box {
+    border: 1px solid white;
+    background-color: #ffffff;
+    width: 40px;
+    height: 40px;
+}
+
+.option {
+    display: flex;
+    gap: 1rem;
+    justify-content:end ;
+    padding: 50PX;
+    align-items: center;
+}
+
+select {
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border-radius: 0;
+}
+
+option {
+    background-color: transparent;
+    color: #1f1f1f;
+    border-radius: 0;
+    ;
+} 
+
+.total-price {
+    display: flex;
+}
+
+.ship-total {
+    display: flex;
+    align-items: center;
+}
+
+.go {
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid wheat;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+
+.sidebar {
+    padding: 15px;
+}
+
+.sidebar ul {
+    display: flex; 
+    list-style-type: none; 
+    padding: 10px;
+    justify-content: center; 
+}
+
+.sidebar li {
+    margin: 0 25px; 
+}
+
+.sidebar a {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+.sidebar a:hover {
+    color: #FFB1B1;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+
+/* Style untuk notifikasi */
+#notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    z-index: 1000;
+    display: none; /* Awalnya disembunyikan */
+}
+
+#notification.show {
+    display: block; /* Tampilkan notifikasi saat class 'show' ditambahkan */
+}
+
+.hidden {
+    display: none;
+}
+
+/* responsif */
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .logo img{
+        width: 110px;
+    }
+
+    ul{
+        list-style: none;
+    }
+
+    li{
+        margin: 10px;
+    }
+
+    nav .searchbar{
+        padding: 10px;
+    }
+
+    nav .ul-pc ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        display: none;
+    }
+
+    li.batas{
+        display: none;
+    }
+
+    nav .icons{
+        padding: 25px;
+    }
+
+    .hamburger{
+        display: inline;
+      }
+
+    .modal-box{
+    width: 330px;
+    height: auto;
+    padding: 10px 0px;
+    margin-left: -80px;
+    margin-top: -70px;
+    background-color: #ffffff;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    }
+    
+    img.login-logo{
+        width: 60px;
+        display: flex;
+        margin: 0 auto;
+    }
+    
+    .login-form{
+        color: black;
+        width: 290px;
+    }
+    
+    .login-form div{
+        margin-bottom: 15px;
+    }
+    
+    .login-form label{
+        display: block;
+    }
+    
+    .login-form input{
+        width: 100%;
+        line-height: 2;
+        font-size: 16px;
+        box-sizing: border-box;
+    }
+    
+    .login-form button{
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+    }
+    
+    .close-modal-btn{
+        color: black;
+         font-size: 30px;
+         position: absolute;
+         right: 10px;
+         top: 10px;
+         text-decoration: none;
+    }
+}
