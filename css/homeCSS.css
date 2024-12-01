@@ -195,7 +195,8 @@ img.login-logo{
 .hero-content-2 {
     display: block;
     margin-left: 800px;
-    margin-top: -110px;
+    margin-top: -122px;
+    text-align: left;
 }
 
 .hero-content-2 p {
