@@ -163,73 +163,110 @@ nav ul li a:hover {
 
 .modal-box {
     z-index: 1;
-    width: 500px;
-    height: 500px;
-    padding: 50px 0px;
-    margin-left: -850px;
-    margin-top: 100px;
-    background-color: #ffffff;
+    width: 30%;
+    padding: 40px 20px;
+    background-color: #272727;
     display: none;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
 }
 
 img.login-logo {
-    width: 100px;
-    margin-left: 200px;
+    display: flex;
+    width: 80px;
+    margin: 10px auto;
 }
 
 .login-form {
-    color: black;
-    width: 400px;
-    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
 }
 
 .login-form div {
     margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
 }
 
 .login-form label {
-    display: block;
+    font-size: 14px;
+    color: white;
+    margin-bottom: 5px;
 }
 
 .login-form input {
+    background-color: transparent;
     width: 100%;
-    line-height: 2;
-    font-size: 16px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #cccccc;
+    border-radius: 1px;
     box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.login-form input:focus {
+    border-color: #007BFF;
 }
 
 .login-form button {
-    border-radius: 20px;
     width: 100%;
     padding: 10px;
-    margin-top: 10px;
-    background-color: black;
+    font-size: 16px;
+    font-weight: bold;
     color: white;
+    background-color: #D6BC9B;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.close-modal-btn {
-    color: black;
-    font-size: 30px;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    text-decoration: none;
+.login-form button:hover {
+    background-color: #1f1f1f;
 }
 
 .google-btn {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
 }
 
-google-btn img {
-    width: 50px;
+.google-btn img {
+    width: 50px !important;
+    cursor: pointer;
 }
 
+.close-modal-btn {
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.close-modal-btn:hover {
+    color: #1f1f1f;
+}
+
+.sign-up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* Products */
 
 main{
