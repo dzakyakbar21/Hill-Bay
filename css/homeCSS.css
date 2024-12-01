@@ -851,6 +851,7 @@ footer {
     
     .hero h1{
         font-size: 20px;
+        margin-left: 0;
     }
 
     .hero h1 span{
