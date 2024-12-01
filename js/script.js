@@ -24,14 +24,18 @@ document.addEventListener("DOMContentLoaded", function() {
     document.querySelector(".close-modal-btn").onclick = closeModal;
 });
 
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
+    console.log('Scroll event detected'); // Periksa apakah event ini dipanggil
     const navbar = document.querySelector('nav');
     if (window.scrollY > 50) {
-      navbar.classList.add('scrolled');
+        navbar.classList.add('scrolled');
+        console.log('Class "scrolled" added');
     } else {
-      navbar.classList.remove('scrolled');
+        navbar.classList.remove('scrolled');
+        console.log('Class "scrolled" removed');
     }
-  });
+});
+
   
   
 
