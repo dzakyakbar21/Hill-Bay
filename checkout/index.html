@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hill Bay - Clothing</title>
+    <link rel="icon" href="../assets/HillBay png.png">
+    <link rel="stylesheet" href="/Hill-Bay/css/checkout.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../assets/HillBayLogo.svg" alt="">
+            </div>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+            </div>
+
+            <div class="ul-pc">
+                <ul>
+                    <li><a href="../index.html">ABOUT</a></li>
+                    <li class="batas">|</li>
+                    <li><a href="../products/index.html">PRODUCTS</a></li>
+                    <li class="batas">|</li>
+                    <li><a href="../contact/index.html">CONTACT</a></li>
+                </ul>
+            </div>
+            
+
+            <div class="top-menu" >
+                <div class="close">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                    </svg>
+                </div>
+               
+                <div class="ul-handphone">
+                    <ul>
+                        <li><a href="../index.html">ABOUT</a></li>
+                        <li class="batas">|</li>
+                        <li><a href="../products/index.html">PRODUCTS</a></li>
+                        <li class="batas">|</li>
+                        <li><a href="../contact/index.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+
+            <div class="icons">
+                <i class="like">
+                    <a href="../favorites/index.html"><img src="../assets/like.png" alt=""></a>
+                </i>
+                <i class="cart">
+                    <a href="../bag/index.html"><img src="../assets/cart.png" alt=""></a>
+                </i>
+                <i class="user">    
+                    <img onclick="showModal()" src="../assets/profile.png" alt="">
+
+                    <div class="modal-box" id="modal-box" >
+
+                        <img class="login-logo" src="../assets/hillbay logo grey.png" alt="">
+
+                        <a href="#" class="close-modal-btn" onclick="closeModal()">X</a>
+            
+                      <form action="#" class="login-form">
+                        <div>
+                            <label for="username">Username</label>
+                            <input type="text" name="username" id="usernmae">
+                        </div>
+                        <div>
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password">
+                        </div>
+                        <div>
+                            <button>Login</button>
+                        </div>
+                        <div class="sign-up">
+                            <p>dont have an account?<a href=""> sign up</a></p>
+                        </div>
+                      </form>  
+                    </div>
+
+                </i>
+                <i class="hamburger">
+                    <img src="../assets/Hamburger Icon.png" alt="">
+                </i>
+            </div> 
+        </nav>
+    </header>
+
+   
+    <main>
+
+      
+        <div class="checkout-heading">
+            <div class="logo-and-title">
+                <div class="logo-checkout">
+                    <img src="/Hill-Bay/assets/checkout_logo.png" alt="">
+                </div>
+                <div class="logo-title">
+                    <h1>Checkout</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="address-container">
+            <div class="address-title">
+                <p> address</p>
+            </div>
+
+            <div class="name-adress-go">
+                <div class="name-contact">
+                    <h3> aska</h3>
+                    <p>number</p>
+                </div>
+
+                <div class="address"> 
+                    <textarea name="adrress" id=""></textarea>
+                    </div>
+
+                <div class="change-button">
+                    <button>
+                        change
+                    </button>
+                </div>
+            </div>
+
+           
+            </div>
+
+            <div class="container-bag">
+                <table>
+                   <tr class="table-product-heading">
+                    <th>Product</th>
+                    <th>color</th>
+                    <th>size</th>
+                    <th>Price</th>
+                    <th>total</th>
+                    <th>subtotal</th>
+                   </tr>
+
+                   <tr class="card-horizontal">
+                    <td><div class="img-title">
+                        <div class="img-product"><img src="/Hill-Bay/assets/Curry Tee.png" alt=""></div>
+                        <p href="">Curry tee</p>
+                    </div> 
+                    </td>
+                    <td>
+                        <div class="product-color">
+                            <div class="color-box"></div>
+                        </div>
+                    </td>
+                    <td>
+                          
+                    <div class="product-size">
+                        <p>L</p>
+                    </div>
+                    </td>
+                    <td>
+                        <div class="product-prize">
+                            <p>Rp200.000</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="product-total">
+                            <p>1</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="Subtotal-product">
+                            <p>Rp200.000</p>
+                        </div>
+                    </td>
+                   </tr>
+
+                   <tr class="card-horizontal">
+                    <td><div class="img-title">
+                        <div class="img-product"><img src="/Hill-Bay/assets/Curry Tee.png" alt=""></div>
+                        <p href="">Curry tee</p>
+                    </div> 
+                    </td>
+                    <td>
+                        <div class="product-color">
+                            <div class="color-box"></div>
+                        </div>
+                    </td>
+                    <td>
+                          
+                    <div class="product-size">
+                        <p>L</p>
+                    </div>
+                    </td>
+                    <td>
+                        <div class="product-prize">
+                            <p>Rp200.000</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="product-total">
+                            <p>1</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="Subtotal-product">
+                            <p>Rp200.000</p>
+                        </div>
+                    </td>
+                   </tr>
+                   <tr class="card-horizontal">
+                    <td><div class="img-title">
+                        <div class="img-product"><img src="/Hill-Bay/assets/Curry Tee.png" alt=""></div>
+                        <p href="">Curry tee</p>
+                    </div> 
+                    </td>
+                    <td>
+                        <div class="product-color">
+                            <div class="color-box"></div>
+                        </div>
+                    </td>
+                    <td>
+                          
+                    <div class="product-size">
+                        <p>L</p>
+                    </div>
+                    </td>
+                    <td>
+                        <div class="product-prize">
+                            <p>Rp200.000</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="product-total">
+                            <p>1</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="Subtotal-product">
+                            <p>Rp200.000</p>
+                        </div>
+                    </td>
+                   </tr>
+                </table>
+               
+                   
+                        <div class="option">
+                            <div id="selected-value">Shipping option : </div>
+                            <select id="Shipping-dropdown" onchange="updateSelectedValue()">
+                                <option value="Express">Express</option>
+                                <option value="Regular">Regular</option>
+                            </select>
+    
+    
+                            <DIV class="total-price"> 
+                                Total harga:
+                                </DIV>
+                            <div class="total-price2"> Rp250.000</div> 
+                              <button class="go"><a href="/Hill-Bay/qris/index.html">Checkout</a> </button>
+                        
+                      
+                   
+                        </div>
+    
+                    
+
+
+
+              
+                           
+                           
+
+               
+                    
+                  
+                    
+                   
+                    
+               
+
+               
+            </div>
+        </div>
+
+           
+
+
+
+    
+        
+        
+      
+
+    </main>
+
+
+
+        
+        <div class="container-sidebar">
+            <div class="sidebar">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html">About</a></li>
+                    <li><a href="#">Catalog</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+
+       
+    
+    
+    
+        <footer>
+            <p>&copy; 2024 Hill Bay. All rights reserved.</p>
+        </footer>
+
+
+
+        
+        
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+    
+  </body>
+  
+</html>
