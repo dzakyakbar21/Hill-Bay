@@ -276,7 +276,7 @@ main{
 .hero h1 {
     font-size: 48px;
     font-weight: 500;
-    margin: 0; 
+
 }
 
 .hero h1 span {
@@ -517,6 +517,12 @@ footer {
 
 /* responsif */
 @media screen and (max-width: 1441px) {
+    
+    .hero h1{
+        margin-left: 70px;
+
+    }
+
    .card{
         width: 330px;
     }
@@ -529,6 +535,7 @@ footer {
     .card-body{
         padding: 20px;
     }
+
 }
 
 @media screen and (max-width: 1025px) {
