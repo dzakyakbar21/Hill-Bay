@@ -745,7 +745,6 @@ footer {
     }
 
     .our-top p.item2 {
-        font-size: SMA;
         display: flex;
         font-size: 6px;
         padding: 0;
@@ -764,13 +763,16 @@ footer {
 
     .container-product{
         gap: 0.6rem;
+        /* display: block; */
     }
 
     .crd {
-        max-width: 90px;
-        max-height: 120px;
-        display: flex;
+        max-width: ;
+        max-height: ;
+        /* display: block; */
         padding: 8px;
+        width: 136px;
+        height: 120px;
     }
 
     .column1 {
@@ -779,7 +781,7 @@ footer {
     }
 
     .card-img {
-        max-width: 80px;
+
         min-height: 70px;
     }
 
