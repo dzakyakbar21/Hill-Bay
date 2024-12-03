@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -10,72 +14,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/infoProductCSS.css">
     <style>
-        .registerTxt {
-            color: black;
-            font-style: normal;
-            font-size: 10px;
-        }
-
-        .registerTxt a {
-            color: black;
-            font-weight: 600;
-            font-size: 10px;
-        }
-
-        .registerTxt a:hover {
-            color: #D6BC9B;
-        }
-
-        .welcome {
-            color: black;
-            font-style: normal;
-            font-size: 18px;
-            padding: 10px 0px 10px;
-        }
-
-        .hidden {
-            display: none;
-        }
-
-        /* Styling for popup */
-        .popup {
-            position: absolute;
-            top: 150%; /* Adjusted position to appear below the icon */
-            right: 0px;
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            z-index: 1000;
-            width: 250px;
-            text-align: center;
-        }
-
-        /* Close button styling (removed for toggle functionality) */
-        .actionBtn {
-            padding: 10px 75px;
-            background-color: #D6BC9B;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin: 10px 0;
-        }
-
-        .actionBtn:hover {
-            background-color: #A18663;
-        }
-
-        .welcome-user {
-            font-style: normal;
-            font-weight: 400;
-            color: black;
-        }
-
-        .welcome-user .user-email {
-            font-weight: 600;
-            color: black;
-        }
+        
     </style>
 </head>
 
@@ -133,20 +72,20 @@
                         <a href="../bag/index.html"><img src="../assets/cart.png" alt=""></a>
                     </i>
                     <i class="user" style="position: relative;">
-                        <img id="show-login" src="./assets/profile.png" alt="">
+                        <img id="show-login" src="../assets/profile.png" alt="">
                         <!-- Popup container -->
                         <div id="popup-signin" class="popup hidden">
                             <?php if (isset($_SESSION['email'])): ?>
                                 <p class="welcome-user">
                                     Hello, <span class="user-email"><?php echo htmlspecialchars($_SESSION['email']); ?></span>
                                 </p>
-                                <form method="POST" action="logout.php">
+                                <form method="POST" action="../logout.php">
                                     <button class="actionBtn" type="submit">Log Out</button>
                                 </form>
                             <?php else: ?>
                                 <p class="welcome">Welcome To Hill Bay!</p>
-                                <button class="actionBtn"><a href="signin.html">Sign In</a></button>
-                                <p class="registerTxt">Don't have an account? <a href="signin.html">Register Here</a></p>
+                                <button class="actionBtn"><a href="../signin.html">Sign In</a></button>
+                                <p class="registerTxt">Don't have an account? <a href="../signin.html">Register Here</a></p>
                             <?php endif; ?>
                         </div>
                     </i>
@@ -217,8 +156,7 @@
                 <div class="our-top">
                     <h1>Butterflies Graphic Shirt</h1>
 
-                    <p class="desc-top">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua.”</p>
+                    <p class="desc-top">“The Butterflies Graphic Tee features a bold white butterfly graphic on the back, adding a touch of elegance and freedom to your style. With a subtle green logo on the front, this tee blends minimalist design with standout details, perfect for casual yet expressive looks.”</p>
                     
                     <p class="desc-disc"><strong>Rp 200.000</strong></p>
 
@@ -249,83 +187,111 @@
         </div>
       
         <div class="container-product-bottom">
-            <div class="column1">
-                <div class="card">
-                    <img src="../assets/GreatnessBeigeTee.png" alt="Card Image" class="card-img">
-                    <div class="card-body">
-                        <h2 class="card-title">Greatness Tee</h2>
-                        <p class="card-text-discount">Rp. 150.000</p>
-                        <p class="card-text">Rp. 110.000
-                          <button onclick="addToFavorites(`Item 1`)">
-                              <img src="../assets/like border white.png" alt="">
-                              <img src="../assets/cart.png" alt="">
-                          </button>
-                      </p>
+        <div class="column1">
+          <div class="crd" >
+            <a href="/infoProduct/index.php"><img src="../assets/Fine Tee.png" alt="Card Image" class="card-img"></a>
+              <div class="card-body">
+                  <h2 class="card-title">Fine Tee</h2>
+                  <p class="card-text-discount">Rp. 150.000</p>
+                    <div class="text-button-fav-bag">
+                      <p class="card-text">Rp. 120.000</p>
+                      <div class="button-fav-bag">
+                        <button onclick="addToFavorites(`Item 1`)">
+                          <img src="../assets/like border white.png" alt="">
+                      </button>
+                      <button onclick="addToBag(`item 1`)">
+                        <img src="../assets/cart.png" alt="">
+                      </button>
+                      </div>
                     </div>
-                </div>
-            </div>
-            <div class="column1">
-                <div class="card">
-                    <img src="../assets/GreatnessBlackTee.png" alt="Card Image" class="card-img">
-                    <div class="card-body">
-                        <h2 class="card-title">Butterfly Tee</h2>
-                        <p class="card-text-discount">Rp. 150.000</p>
-                        <p class="card-text">Rp. 110.000
-                          <button onclick="addToFavorites(`Item 1`)">
-                            <img src="../assets/like border white.png" alt="">
-                            <img src="../assets/cart.png" alt="">
-                          </button>
-                      </p>
-                    </div>
-                </div>
-            </div>
-            <div class="column1">
-                <div class="card">
-                    <img src="../assets/GreatnessBeigeTee.png" alt="Card Image" class="card-img">
-                    <div class="card-body">
-                        <h2 class="card-title">Greatness Tee</h2>
-                        <p class="card-text-discount">Rp. 150.000</p>
-                        <p class="card-text">Rp. 110.000
-                          <button onclick="addToFavorites(`Item 1`)">
-                            <img src="../assets/like border white.png" alt="">
-                            <img src="../assets/cart.png" alt="">
-                          </button>
-                      </p>
-                    </div>
-                </div>
-            </div>
-            <div class="column1">
-                <div class="card">
-                    <img src="../assets/GreatnessBlackTee.png" alt="Card Image" class="card-img">
-                    <div class="card-body">
-                        <h2 class="card-title">Butterfly Tee</h2>
-                        <p class="card-text-discount">Rp. 150.000</p>
-                        <p class="card-text">Rp. 110.000
-                          <button onclick="addToFavorites(`Item 1`)">
-                            <img src="../assets/like border white.png" alt="">
-                            <img src="../assets/cart.png" alt="">
-                          </button>
-                      </p>
-                    </div>
-                </div>
-            </div>
-            <div class="column1">
-                <div class="card">
-                    <img src="../assets/GreatnessBlackTee.png" alt="Card Image" class="card-img">
-                    <div class="card-body">
-                        <h2 class="card-title">Butterfly Tee</h2>
-                        <p class="card-text-discount">Rp. 150.000</p>
-                        <p class="card-text">Rp. 110.000
-                          <button onclick="addToFavorites(`Item 1`)">
-                            <img src="../assets/like border white.png" alt="">
-                            <img src="../assets/cart.png" alt="">
-                          </button>
-                      </p>
-                    </div>
-                </div>
-            </div>
-                
+              </div>
           </div>
+        
+      </div>
+      <div class="column1">
+          <div class="crd" >
+            <a href="/infoProduct/index.php"><img src="../assets/ButterflyTee.png" alt="Card Image" class="card-img"></a>
+              <div class="card-body">
+                  <h2 class="card-title">Butterfly Tee</h2>
+                  <p class="card-text-discount">Rp. 150.000</p>
+                    <div class="text-button-fav-bag">
+                      <p class="card-text">Rp. 120.000</p>
+                      <div class="button-fav-bag">
+                        <button onclick="addToFavorites(`Item 1`)">
+                          <img src="../assets/like border white.png" alt="">
+                      </button>
+                      <button onclick="addToBag(`item 1`)">
+                        <img src="../assets/cart.png" alt="">
+                      </button>
+                      </div>
+                    </div>
+              </div>
+          </div>
+        
+      </div>
+      <div class="column1">
+          <div class="crd" >
+            <a href="/infoProduct/index.php"><img src="../assets/Curry Tee.png" alt="Card Image" class="card-img"></a>
+              <div class="card-body">
+                  <h2 class="card-title">Curry Tee</h2>
+                  <p class="card-text-discount">Rp. 150.000</p>
+                    <div class="text-button-fav-bag">
+                      <p class="card-text">Rp. 120.000</p>
+                      <div class="button-fav-bag">
+                        <button onclick="addToFavorites(`Item 1`)">
+                          <img src="../assets/like border white.png" alt="">
+                      </button>
+                      <button onclick="addToBag(`item 1`)">
+                        <img src="../assets/cart.png" alt="">
+                      </button>
+                      </div>
+                    </div>
+              </div>
+          </div>
+        
+      </div>
+      <div class="column1">
+          <div class="crd" >
+            <a href="/infoProduct/index.php"><img src="../assets/Ja Morant Tee.png" alt="Card Image" class="card-img"></a>
+              <div class="card-body">
+                  <h2 class="card-title">Ja Morant Tee</h2>
+                  <p class="card-text-discount">Rp. 150.000</p>
+                    <div class="text-button-fav-bag">
+                      <p class="card-text">Rp. 120.000</p>
+                      <div class="button-fav-bag">
+                        <button onclick="addToFavorites(`Item 1`)">
+                          <img src="../assets/like border white.png" alt="">
+                      </button>
+                      <button onclick="addToBag(`item 1`)">
+                        <img src="../assets/cart.png" alt="">
+                      </button>
+                      </div>
+                    </div>
+              </div>
+          </div>
+        
+      </div>
+      <div class="column1">
+          <div class="crd" >
+            <a href="/infoProduct/index.php"><img src="../assets/GreatnessBeigeTee.png" alt="Card Image" class="card-img"></a>
+              <div class="card-body">
+                  <h2 class="card-title">Greatness Tee</h2>
+                  <p class="card-text-discount">Rp. 150.000</p>
+                    <div class="text-button-fav-bag">
+                      <p class="card-text">Rp. 120.000</p>
+                      <div class="button-fav-bag">
+                        <button onclick="addToFavorites(`Item 1`)">
+                          <img src="../assets/like border white.png" alt="">
+                      </button>
+                      <button onclick="addToBag(`item 1`)">
+                        <img src="../assets/cart.png" alt="">
+                      </button>
+                      </div>
+                    </div>
+              </div>
+          </div>
+        
+      </div>
 
 
 
@@ -353,6 +319,16 @@
             <p>&copy; 2024 Hill Bay. All rights reserved.</p>
         </footer>
 
+        <script>
+        // Elements for popup functionality
+        const showLoginIcon = document.getElementById('show-login');
+        const popup = document.getElementById('popup-signin');
+
+        // Toggle popup on clicking the user icon
+        showLoginIcon.addEventListener('click', () => {
+            popup.classList.toggle('hidden');
+        });
+        </script>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
