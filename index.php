@@ -139,7 +139,7 @@
 
             <div class="column1">
                 <div class="card">
-                    <a href="./infoProduct/index.html"><img src="./assets/ButterflyTee.png" alt="Card Image" class="card-img"></a>
+                    <a href="./infoProduct/index.php"><img src="./assets/ButterflyTee.png" alt="Card Image" class="card-img"></a>
                     <div class="card-body">
                         <h2 class="card-title">Butterfly Tee</h2>
                         <p class="card-text">Rp. 110.000</p>
