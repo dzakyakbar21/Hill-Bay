@@ -153,8 +153,15 @@ session_start();
            
             <div class="our-top">
               <h1>Our <span>Recomendation</span></h1>
-              <p class="item"> Item Name</p>
-              <p class="item2">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</p>
+              <p class="item">Greatness Tee</p>
+              <p class="item2">“The Greatness Black Tee is a sleek, premium-quality T-shirt designed for comfort and style, featuring a versatile black color that fits any occasion. Made for those who want to express confidence and individuality, it’s perfect for everyday wear or casual outings.
+
+
+
+
+
+
+”</p>
           </div>
 
           </div>
@@ -167,7 +174,7 @@ session_start();
         <div class="container-product">
         <div class="column1">
           <div class="crd" >
-            <a href=""><img src="../assets/Fine Tee.png" alt="Card Image" class="card-img"></a>
+            <a href="/infoProduct/index.php"><img src="../assets/Fine Tee.png" alt="Card Image" class="card-img"></a>
               <div class="card-body">
                   <h2 class="card-title">Fine Tee</h2>
                   <p class="card-text-discount">Rp. 150.000</p>
@@ -188,7 +195,7 @@ session_start();
       </div>
       <div class="column1">
           <div class="crd" >
-            <a href=""><img src="../assets/ButterflyTee.png" alt="Card Image" class="card-img"></a>
+            <a href="/infoProduct/index.php"><img src="../assets/ButterflyTee.png" alt="Card Image" class="card-img"></a>
               <div class="card-body">
                   <h2 class="card-title">Butterfly Tee</h2>
                   <p class="card-text-discount">Rp. 150.000</p>
@@ -209,7 +216,7 @@ session_start();
       </div>
       <div class="column1">
           <div class="crd" >
-            <a href=""><img src="../assets/Curry Tee.png" alt="Card Image" class="card-img"></a>
+            <a href="/infoProduct/index.php"><img src="../assets/Curry Tee.png" alt="Card Image" class="card-img"></a>
               <div class="card-body">
                   <h2 class="card-title">Curry Tee</h2>
                   <p class="card-text-discount">Rp. 150.000</p>
@@ -230,7 +237,7 @@ session_start();
       </div>
       <div class="column1">
           <div class="crd" >
-            <a href=""><img src="../assets/Ja Morant Tee.png" alt="Card Image" class="card-img"></a>
+            <a href="/infoProduct/index.php"><img src="../assets/Ja Morant Tee.png" alt="Card Image" class="card-img"></a>
               <div class="card-body">
                   <h2 class="card-title">Ja Morant Tee</h2>
                   <p class="card-text-discount">Rp. 150.000</p>
