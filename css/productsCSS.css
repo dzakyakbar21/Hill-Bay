@@ -339,11 +339,15 @@ nav ul li a:hover {
 }
 
 .card-img {
-    width: auto;
-    min-height: 250px;
-    width: 250px;
+    padding-right: 40px;
+    width: 270px;
+    object-position: center;
     transition: transform 0.2s ease-in-out;
-    object-fit:cover;
+    
+}
+
+img.card-img:hover {
+    transform: scale(1.1);
 }
 
 .card-title {
@@ -390,13 +394,6 @@ button {
     background: none;
 }
 
-
-.card img:hover {
-    transform: scale(1.1);
-}
-
-
-
 .sidebar {
     padding: 15px;
 }
@@ -426,28 +423,6 @@ footer {
     justify-content: center;
     align-items: center;
     padding-bottom: 15px;
-}
-
-/* Style untuk notifikasi */
-
-#notification {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background-color: #4CAF50;
-    color: white;
-    padding: 15px;
-    border-radius: 5px;
-    z-index: 1000;
-    display: none;
-}
-
-#notification.show {
-    display: block;
-}
-
-.hidden {
-    display: none;
 }
 
 /* Responsif */
