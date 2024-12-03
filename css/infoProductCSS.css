@@ -17,6 +17,77 @@ body {
     color: white;
 }
 
+/* Login */
+
+.registerTxt {
+    color: black;
+    font-style: normal;
+    font-size: 10px;
+}
+
+.registerTxt a {
+    color: black;
+    font-weight: 600;
+    font-size: 10px;
+}
+
+.registerTxt a:hover {
+    color: #D6BC9B;
+}
+
+.welcome {
+    color: black;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Styling for popup */
+.popup {
+    position: absolute;
+    top: 150%; /* Adjusted position to appear below the icon */
+    right: 0px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    z-index: 1000;
+    width: 250px;
+    text-align: center;
+}
+
+/* Close button styling (removed for toggle functionality) */
+.actionBtn {
+    padding: 10px 75px;
+    background-color: #D6BC9B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.actionBtn a{
+    color: white;
+}
+
+.actionBtn:hover {
+    background-color: #A18663;
+}
+
+.welcome-user {
+    font-style: normal;
+    font-weight: 400;
+    color: black;
+}
+
+.welcome-user .user-email {
+    font-weight: 600;
+    color: black;
+}
+
 /* Home */
 
 header nav {
@@ -97,7 +168,7 @@ nav ul li a {
 }
 
 nav ul li a:hover{
-    color: #FFB1B1;
+    color: #D6BC9B;
 }
 
 .icons i {
@@ -294,7 +365,7 @@ img.login-logo{
     background-color: transparent;
     font-weight: 700;
     color: #D6BC9B;
-    border-radius: 5px;
+    border-radius: 2px;
     border: 1px solid #D6BC9B;
     transition: color 0.3s ease-in-out;
 }
@@ -334,49 +405,73 @@ img.login-logo{
     margin: 15px;
 }
 
-.card {
+.column1 a {
+    text-decoration: none;
+}
+
+.crd {
     background-color: #272727;
-    width: 235px;
+   
+    width: 250px;
     overflow: hidden;
     text-align: center;
     transition: transform 0.2s ease-in-out;
+    padding: 20px;
+    display: flex;
+    flex-flow: column;
 }
 
 .card-img {
-    width: auto;
-    height: 200px;
+   
+    padding-right: 40px;
+    width: 250px;
+    object-position: center;
     transition: transform 0.2s ease-in-out;
+}
+
+img.card-img:hover {
+    transform: scale(1.1);
 }
 
 .card-title {
     display: flex;
     font-weight: 700;
     font-size: 24px;
-    color: #ffffff;
+    color: white;
 }
 
-.card-text-discount{
-    color: #ffffff;
+.card-text-discount {
+    color: white;
     display: flex;
     text-decoration: line-through;
     font-size: 13px;
 }
 
 .card-text {
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin: 15px 0;
     font-size: 16px;
     font-weight: 600;
-    color: #ffffff;
+    color: white;
 }
 
-.card-text img {
-    width: 20px; 
-    height: auto;
-    margin-right: 8px;
+.text-button-fav-bag {
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
 }
+
+.button-fav-bag {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.button-fav-bag img {
+    width: 20px;
+}
+
 
 .card img:hover {
     transform: scale(1.1) ;
