@@ -321,6 +321,10 @@ nav ul li a:hover {
     margin: 15px;
 }
 
+.column1 a {
+    text-decoration: none;
+}
+
 .crd {
     background-color: #272727;
    
@@ -336,6 +340,7 @@ nav ul li a:hover {
 .card-img {
     width: auto;
     min-height: 250px;
+    width: 250px;
     transition: transform 0.2s ease-in-out;
     object-fit:cover;
 }
@@ -364,20 +369,32 @@ nav ul li a:hover {
     color: white;
 }
 
-.card-text img {
-    width: 20px;
-    height: auto;
-    margin-right: 8px;
+.text-button-fav-bag {
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
 }
 
-.card img:hover {
-    transform: scale(1.1);
+.button-fav-bag {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.button-fav-bag img {
+    width: 20px;
 }
 
 button {
     border: none;
     background: none;
 }
+
+
+.card img:hover {
+    transform: scale(1.1);
+}
+
+
 
 .sidebar {
     padding: 15px;
