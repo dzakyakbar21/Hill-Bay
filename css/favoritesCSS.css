@@ -41,7 +41,7 @@ header {
 }
 
 
-main{
+main{   
     display: flex;
     flex-flow:column;
     justify-content: center;
@@ -317,13 +317,20 @@ img.login-logo{
 
 .column1 {
     display: flex;
-   
+    justify-content: center;
+    align-items: center;
+    flex: 0;
+    margin: 15px;
 }
 
-.card {
+.column1 a {
+    text-decoration: none;
+}
+
+.crd {
     background-color: #272727;
    
-    width: 280px;
+    width: 250px;
     overflow: hidden;
     text-align: center;
     transition: transform 0.2s ease-in-out;
@@ -332,15 +339,16 @@ img.login-logo{
     flex-flow: column;
 }
 
-.card-body{
-    padding: 5px;
+.card-img {
+   
+    padding-right: 40px;
+    width: 250px;
+    object-position: center;
+    transition: transform 0.2s ease-in-out;
 }
 
-.card-img {
-    width: auto;
-    min-height: 250px;
-    transition: transform 0.2s ease-in-out;
-    object-fit:cover;
+img.card-img:hover {
+    transform: scale(1.1);
 }
 
 .card-title {
@@ -350,7 +358,7 @@ img.login-logo{
     color: white;
 }
 
-.card-text-discount{
+.card-text-discount {
     color: white;
     display: flex;
     text-decoration: line-through;
@@ -367,11 +375,21 @@ img.login-logo{
     color: white;
 }
 
-.card-text img {
-    width: 25px; 
-    height: auto;
-    margin-right: 10px;
+.text-button-fav-bag {
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
 }
+
+.button-fav-bag {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.button-fav-bag img {
+    width: 20px;
+}
+
 
 .card img:hover {
     transform: scale(1.1) ;

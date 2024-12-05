@@ -186,7 +186,7 @@
       
         <div class="container-product-bottom">
         <div class="column1">
-          <div class="crd" >
+          <div class="crd" id="" >
             <a href="/infoProduct/index.php"><img src="../assets/Fine Tee.png" alt="Card Image" class="card-img"></a>
               <div class="card-body">
                   <h2 class="card-title">Fine Tee</h2>
@@ -207,7 +207,7 @@
         
       </div>
       <div class="column1">
-          <div class="crd" >
+          <div class="crd" id=" ">
             <a href="/infoProduct/index.php"><img src="../assets/ButterflyTee.png" alt="Card Image" class="card-img"></a>
               <div class="card-body">
                   <h2 class="card-title">Butterfly Tee</h2>
@@ -228,7 +228,7 @@
         
       </div>
       <div class="column1">
-          <div class="crd" >
+          <div class="crd" id="">
             <a href="/infoProduct/index.php"><img src="../assets/Curry Tee.png" alt="Card Image" class="card-img"></a>
               <div class="card-body">
                   <h2 class="card-title">Curry Tee</h2>
@@ -249,7 +249,7 @@
         
       </div>
       <div class="column1">
-          <div class="crd" >
+          <div class="crd" id="" >
             <a href="/infoProduct/index.php"><img src="../assets/Ja Morant Tee.png" alt="Card Image" class="card-img"></a>
               <div class="card-body">
                   <h2 class="card-title">Ja Morant Tee</h2>
@@ -270,7 +270,7 @@
         
       </div>
       <div class="column1">
-          <div class="crd" >
+          <div class="crd" id=" ">
             <a href="/infoProduct/index.php"><img src="../assets/GreatnessBeigeTee.png" alt="Card Image" class="card-img"></a>
               <div class="card-body">
                   <h2 class="card-title">Greatness Tee</h2>

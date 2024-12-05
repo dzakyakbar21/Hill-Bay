@@ -238,10 +238,18 @@ nav ul li a:hover{
 }
 
 .column1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex: 0;
+    margin: 15px;
 }
 
-.card {
+.column1 a {
+    text-decoration: none;
+}
+
+.crd {
     background-color: #272727;
    
     width: 280px;
@@ -253,15 +261,16 @@ nav ul li a:hover{
     flex-flow: column;
 }
 
-.card-body{
-    padding: 5px;
+.card-img {
+    padding-right: 40px;
+    width: 270px;
+    object-position: center;
+    transition: transform 0.2s ease-in-out;
+    
 }
 
-.card-img {
-    width: auto;
-    min-height: 250px;
-    transition: transform 0.2s ease-in-out;
-    object-fit:cover;
+img.card-img:hover {
+    transform: scale(1.1);
 }
 
 .card-title {
@@ -271,7 +280,7 @@ nav ul li a:hover{
     color: white;
 }
 
-.card-text-discount{
+.card-text-discount {
     color: white;
     display: flex;
     text-decoration: line-through;
@@ -288,58 +297,30 @@ nav ul li a:hover{
     color: white;
 }
 
-
-p.counter {
-    margin-top: -33px;
-    margin-left: 215px;
-    color: white;
-}
-
-.card-text img {
-    width: 25px; 
-    height: auto;
-    margin-right: 10px;
-}
-
-.card img:hover {
-    transform: scale(1.1) ;
-}
-
-
-.counter {
+.text-button-fav-bag {
     display: flex;
+    justify-content: space-between ;
     align-items: center;
-    justify-content: center;
 }
 
-/* Tombol Custom */
-.counter .btn {
-    width: 1.2rem;
-   
-    font-size: 20px;
-    cursor: pointer;
-    background-color: transparent; 
-    color: white;
-    border: 0.3px solid white;
+.button-buy-now {
+    border: 1px solid white;
+    padding: 4px;
+    border-radius: 2px;  
+    display: flex;
+    align-items: center; 
     
-    transition: all 0.2s ease-in-out;
 }
 
-.counter .btn:active {
-    box-shadow: 0 2px #0e0e0e; /* Bayangan saat ditekan */
-    transform: translateY(2px); /* Efek klik */
+.button-buy-now a {
+    font-size: 10px;
+    display: flex;
+    
 }
 
-/* Input */
-.counter input {
-    max-width: 30px;
-    max-height: 30px;
-    text-align: center;
-    font-size:15px ;
-    border: 1px solid #ccc;
-    background-color: transparent;
-    color: hwb(0 100% 0%);
-    padding: 5px;
+button {
+    border: none;
+    background: none;
 }
 
 

@@ -69,77 +69,74 @@ session_start();
 
     <div class="container-product">
         
-        <div class="column1">
-            <div class="card">
-                <img src="../assets/GreatnessBeigeTee.png" alt="Card Image" class="card-img">
-                <div class="card-body">
-                    <h2 class="card-title">Greatness Tee</h2>
-                    <p class="card-text-discount">Rp. 150.000</p>
-                   <div class="price-counter">
-                    <p class="card-text">Rp. 110.000 </p>
-                    <div class="counter" data-id="1">
-                        <button class="btn" onclick="decrement(this)">-</button>
-                        <input type="text" value="0" oninput="validateInput(this)" />
-                        <button class="btn" onclick="increment(this)">+</button>
-                    </div>                
-                   </div>        
-                </div>
-             </div>
-        </div>
+    <div class="column1">
+          <div class="crd" id="" >
+          <a href="/infoProduct/index.php"><img src="../assets/Fine Tee.png" alt="Card Image" class="card-img"></a>
+              <div class="card-body">
+                  <h2 class="card-title">Fine Tee</h2>
+                  <p class="card-text-discount">Rp. 150.000</p>
+                    <div class="text-button-fav-bag">
+                      <p class="card-text">Rp. 120.000</p>
+                      <div class="button-buy-now">
+                       <button><a href="/qris/index.html">Buy now</a></button>
+                        
+                      </div>
+                    </div>
+              </div>
+          </div>
+      </div>
         
-        <div class="column1">
-            <div class="card">
-                <img src="../assets/GreatnessBeigeTee.png" alt="Card Image" class="card-img">
-                <div class="card-body">
-                    <h2 class="card-title">Greatness Tee</h2>
-                    <p class="card-text-discount">Rp. 150.000</p>
-                   <div class="price-counter">
-                    <p class="card-text">Rp. 110.000 </p>
-                    <div class="counter" data-id="2">
-                        <button class="btn" onclick="decrement(this)">-</button>
-                        <input type="text" value="0" oninput="validateInput(this)" />
-                        <button class="btn" onclick="increment(this)">+</button>
-                    </div>               
-                   </div>        
-                </div>
-             </div>
-        </div>
+      <div class="column1">
+          <div class="crd" id="" >
+          <a href="/infoProduct/index.php"><img src="../assets/ButterflyTee.png" alt="Card Image" class="card-img"></a>
+              <div class="card-body">
+                  <h2 class="card-title">Butterfly Tee</h2>
+                  <p class="card-text-discount">Rp. 150.000</p>
+                    <div class="text-button-fav-bag">
+                      <p class="card-text">Rp. 120.000</p>
+                      <div class="button-buy-now">
+                       <button><a href="/qris/index.html">Buy now</a></button>
+                        
+                      </div>
+                    </div>
+              </div>
+          </div>
+      </div>
 
         <div class="column1">
-            <div class="card">
-                <img src="../assets/GreatnessBeigeTee.png" alt="Card Image" class="card-img">
-                <div class="card-body">
-                    <h2 class="card-title">Greatness Tee</h2>
-                    <p class="card-text-discount">Rp. 150.000</p>
-                   <div class="price-counter">
-                    <p class="card-text">Rp. 110.000 </p>
-                    <div class="counter" data-id="3">
-                        <button class="btn" onclick="decrement(this)">-</button>
-                        <input type="text" value="0" oninput="validateInput(this)" />
-                        <button class="btn" onclick="increment(this)">+</button>
-                    </div>                
-                   </div>        
-                </div>
-             </div>
-        </div>
+          <div class="crd" id="" >
+          <a href="/infoProduct/index.php"><img src="../assets/Curry Tee.png" alt="Card Image" class="card-img"></a>
+              <div class="card-body">
+                  <h2 class="card-title">Curry Tee</h2>
+                  <p class="card-text-discount">Rp. 150.000</p>
+                    <div class="text-button-fav-bag">
+                      <p class="card-text">Rp. 120.000</p>
+                      <div class="button-buy-now">
+                       <button><a href="/qris/index.html">Buy now</a></button>
+                        
+                      </div>
+                    </div>
+              </div>
+          </div>
+      </div>
 
-        <div class="column1">
-            <div class="card">
-                <img src="../assets/GreatnessBeigeTee.png" alt="Card Image" class="card-img">
-                <div class="card-body">
-                    <h2 class="card-title">Greatness Tee</h2>
-                    <p class="card-text-discount">Rp. 150.000</p>
-                   <div class="price-counter">
-                    <p class="card-text">Rp. 110.000 </p>
-                    <div class="counter" data-id="4">
-                        <button class="btn" onclick="decrement(this)">-</button>
-                        <input type="text" value="0" oninput="validateInput(this)" />
-                        <button class="btn" onclick="increment(this)">+</button>
-                    </div>                
-                   </div>        
-                </div>
-             </div>
-        </div>
+      <div class="column1">
+          <div class="crd" id="" >
+          <a href="/infoProduct/index.php"><img src="../assets/Ja Morant Tee.png" alt="Card Image" class="card-img"></a>
+              <div class="card-body">
+                  <h2 class="card-title">Ja Morant Tee</h2>
+                  <p class="card-text-discount">Rp. 150.000</p>
+                    <div class="text-button-fav-bag">
+                      <p class="card-text">Rp. 120.000</p>
+                      <div class="button-buy-now">
+                       <button><a href="/qris/index.html">Buy now</a></button>
+                        
+                      </div>
+                    </div>
+              </div>
+          </div>
+      </div>
+      
         
     </div>
         

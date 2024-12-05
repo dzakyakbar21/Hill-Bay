@@ -91,66 +91,89 @@
     </div>
 
     <div class="container-product">
-        <div class="column1">
-            <div class="card">
-                <img src="../assets/GreatnessBeigeTee.png" alt="Card Image" class="card-img">
-                <div class="card-body">
-                    <h2 class="card-title">Greatness Tee</h2>
-                    <p class="card-text-discount">Rp. 150.000</p>
-                    <p class="card-text">Rp. 110.000
+    <div class="column1">
+          <div class="crd" id="">
+            <a href="/infoProduct/index.php"><img src="../assets/Fine Tee.png" alt="Card Image" class="card-img"></a>
+              <div class="card-body">
+                  <h2 class="card-title">Fine Tee</h2>
+                  <p class="card-text-discount">Rp. 150.000</p>
+                    <div class="text-button-fav-bag">
+                      <p class="card-text">Rp. 120.000</p>
+                      <div class="button-fav-bag">
                         <button onclick="addToFavorites(`Item 1`)">
-                            <img src="../assets/like border white.png" alt="">
-                            <img src="../assets/cart.png" alt="">
-                        </button>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="column1">
-            <div class="card">
-                <img src="../assets/GreatnessBlackTee.png" alt="Card Image" class="card-img">
-                <div class="card-body">
-                    <h2 class="card-title">Butterfly Tee</h2>
-                    <p class="card-text-discount">Rp. 150.000</p>
-                    <p class="card-text">Rp. 110.000
-                        <button onclick="addToFavorites(`Item 2`)">
-                            <img src="../assets/like border white.png" alt="">
-                            <img src="../assets/cart.png" alt="">
-                        </button>                    
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="column1">
-            <div class="card">
-                <img src="../assets/GreatnessBeigeTee.png" alt="Card Image" class="card-img">
-                <div class="card-body">
-                    <h2 class="card-title">Greatness Tee</h2>
-                    <p class="card-text-discount">Rp. 150.000</p>
-                    <p class="card-text">Rp. 110.000
+                          <img src="../assets/like border white.png" alt="">
+                      </button>
+                      <button onclick="addToBag(`item 1`)">
+                        <img src="../assets/cart.png" alt="">
+                      </button>
+                      </div>
+                    </div>
+              </div>
+          </div>
+        
+      </div>    
+    <div class="column1">
+          <div class="crd" id="" >
+            <a href="/infoProduct/index.php"><img src="../assets/ButterflyTee.png" alt="Card Image" class="card-img"></a>
+              <div class="card-body">
+                  <h2 class="card-title">Butterfly Tee</h2>
+                  <p class="card-text-discount">Rp. 150.000</p>
+                    <div class="text-button-fav-bag">
+                      <p class="card-text">Rp. 120.000</p>
+                      <div class="button-fav-bag">
                         <button onclick="addToFavorites(`Item 1`)">
-                            <img src="../assets/like border white.png" alt="">
-                            <img src="../assets/cart.png" alt="">
-                        </button>                    
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="column1">
-            <div class="card">
-                <img src="../assets/GreatnessBlackTee.png" alt="Card Image" class="card-img">
-                <div class="card-body">
-                    <h2 class="card-title">Butterfly Tee</h2>
-                    <p class="card-text-discount">Rp. 150.000</p>
-                    <p class="card-text">Rp. 110.000
-                        <button onclick="addToFavorites(`Item 2`)">
-                            <img src="../assets/like border white.png" alt="">
-                            <img src="../assets/cart.png" alt="">
-                        </button>                    
-                    </p>
-                </div>
-            </div>
-        </div>
+                          <img src="../assets/like border white.png" alt="">
+                      </button>
+                      <button onclick="addToBag(`item 1`)">
+                        <img src="../assets/cart.png" alt="">
+                      </button>
+                      </div>
+                    </div>
+              </div>
+          </div>
+        
+      </div>
+      <div class="column1">
+          <div class="crd" id=" " >
+            <a href="/infoProduct/index.php"><img src="../assets/Curry Tee.png" alt="Card Image" class="card-img"></a>
+              <div class="card-body">
+                  <h2 class="card-title">Curry Tee</h2>
+                  <p class="card-text-discount">Rp. 150.000</p>
+                    <div class="text-button-fav-bag">
+                      <p class="card-text">Rp. 120.000</p>
+                      <div class="button-fav-bag">
+                        <button onclick="addToFavorites(`Item 1`)">
+                          <img src="../assets/like border white.png" alt="">
+                      </button>
+                      <button onclick="addToBag(`item 1`)">
+                        <img src="../assets/cart.png" alt="">
+                      </button>
+                      </div>
+                    </div>
+              </div>
+          </div>
+        
+      </div>
+      <div class="column1">
+          <div class="crd" id="product">
+            <a href="/infoProduct/index.php"><img src="../assets/Ja Morant Tee.png" alt="Card Image" class="card-img"></a>
+              <div class="card-body">
+                  <h2 class="card-title">Ja Morant Tee</h2>
+                  <p class="card-text-discount">Rp. 150.000</p>
+                    <div class="text-button-fav-bag">
+                      <p class="card-text">Rp. 120.000</p>
+                      <div class="button-fav-bag">
+                        <button onclick="addToFavorites(`Item 1`)">
+                          <img src="../assets/like border white.png" alt="">
+                      </button>
+                      <button onclick="addToBag(`item 1`)">
+                        <img src="../assets/cart.png" alt="">
+                      </button>
+                      </div>
+                    </div>
+              </div>
+          </div>
+    </div>
     </div>
         
         <div class="container-sidebar">
